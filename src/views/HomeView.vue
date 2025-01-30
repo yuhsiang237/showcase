@@ -1,4 +1,26 @@
 <template>
+  <!-- 自我介紹 -->
+  <div class="intro-area mb-3">
+    <div class="logo">@Yuhsiang237</div>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-8">
+          <div class="text1 mb-3">自我介紹</div>
+          <div>
+            自我介紹文字自我介紹文字自我介紹文字自我介紹文字自我介紹文字自我介紹文字
+            自我介紹文字自我介紹文字自我介紹文字自我介紹文字自我介紹文字
+            自我介紹文字自我介紹文字自我介紹文字自我介紹文字
+            自我介紹文字自我介紹文字自我介紹文字
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex justify-content-end">
+            <img :src="demo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 技術 -->
   <div class="skill-area mb-3">
     <div class="container py-4">
@@ -42,3 +64,15 @@
   </div>
   <!-- ./footer -->
 </template>
+<script>
+import demo from "@/assets/image/demo.png";
+
+export default {
+  name: "MyComponent",
+  data() {
+    return {
+      demo,
+    };
+  },
+};
+</script>
