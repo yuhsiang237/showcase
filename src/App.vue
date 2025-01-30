@@ -4,16 +4,18 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
+  <div class="banner">
+    <!-- <div style="display:flex;justify-content: flex-end;text-align:right;">
+        <div class="px-2">
         <RouterLink to="/">Home</RouterLink>
+
+        </div>
+         <div class="px-2">
         <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+
+        </div>
+      </div> -->
+  </div>
 
   <RouterView />
 </template>
