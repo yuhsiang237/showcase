@@ -41,6 +41,107 @@
       </div>
     </div>
   </div>
+  <!-- 作品 -->
+  <div class="work-item-area">
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        <div class="col bold text1 text-center">作品一覽</div>
+      </div>
+      <div class="work-item-grid">
+        <div class="work-item-box">
+          <figure>
+            <img src="https://picsum.photos/200/300" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+        <div class="work-item-box">
+          <figure>
+            <img :src="demo" />
+          </figure>
+          <h3>
+            <span>XXX</span>
+            <em>標題</em>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./作品-->
   <!-- 個人經歷 -->
   <div class="work-exp-area">
     <div class="container py-4">
