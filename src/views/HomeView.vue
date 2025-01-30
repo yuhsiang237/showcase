@@ -1,4 +1,24 @@
 <template>
+  <!-- 技術 -->
+  <div class="skill-area mb-3">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col bold mb-3">技術</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="skill-enum mb-2">
+            <div>HTML5</div>
+            <div>Vue</div>
+            <div>CSS/SCSS</div>
+          </div>
+          <div>
+            <p>時代會變OOO~熟悉API呼叫與同步...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 個人經歷 -->
   <div class="work-exp-area">
     <div class="container py-4">

@@ -34,7 +34,23 @@
     }
   }
 }
-
+.skill-area {
+  background-color: #f0f0f0;
+  .skill-enum {
+    display: flex !important;
+    div {
+      border-right: solid 1px;
+      padding-right: 20px;
+      padding-left: 20px;
+      &:first-child {
+        padding-left: 0px;
+      }
+      &:last-child {
+        border-right: none; // 去掉最后一个元素的右边框
+      }
+    }
+  }
+}
 .footer-area {
   background-color: #a9a9a9;
   min-height: 100px;
