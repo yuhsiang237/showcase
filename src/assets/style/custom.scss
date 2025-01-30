@@ -3,6 +3,9 @@
   font-size: 1rem;
   font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
 }
+.bold {
+  font-weight: bold;
+}
 .text1 {
   font-size: 1.3rem;
   &.bold {
@@ -14,4 +17,25 @@
   &.bold {
     font-weight: bold;
   }
+}
+
+//===== Home =====
+.work-exp-area {
+  background-color: #f2f2f2;
+  min-height: 400px;
+  .work-exp-card {
+    padding-bottom: 10px;
+    .date {
+      min-height: 80px;
+    }
+    .description {
+      border-left: solid 1px;
+      color: black;
+    }
+  }
+}
+
+.footer-area {
+  background-color: #a9a9a9;
+  min-height: 100px;
 }
