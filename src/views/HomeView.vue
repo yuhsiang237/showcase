@@ -164,15 +164,24 @@
     Yuhsiang copyright
   </div>
   <!-- ./footer -->
+  <!-- DModal 组件 -->
+  <button @click="showModal = true">ShowModal</button>
+  <DModal v-show="showModal" @close="showModal = false" />
+  <!---->
 </template>
 <script>
 import demo from "@/assets/image/demo.png";
+import DModal from "@/components/DModal.vue";
 
 export default {
   name: "MyComponent",
+  components: {
+    DModal,
+  },
   data() {
     return {
       demo,
+      showModal: false,
     };
   },
 };
