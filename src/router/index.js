@@ -8,13 +8,13 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
-      meta: { title: 'Showcase | YU HSIANG Resume' }
-    }
+      meta: { title: "Showcase | YU HSIANG Resume" },
+    },
   ],
 });
 
 router.beforeEach((to) => {
-  const title = to.meta.title || 'Default Title'; // Fallback title if no meta.title
+  const title = to.meta.title || "Default Title"; // Fallback title if no meta.title
   document.title = title;
 });
 

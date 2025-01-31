@@ -1,17 +1,15 @@
 <template>
-  <div class="banner">
-  </div>
+  <div class="banner"></div>
   <RouterView />
 </template>
-<script >
+<script>
 import { RouterView } from "vue-router";
 
 export default {
   name: "app",
   components: {
-    RouterView
+    RouterView,
   },
-  setup() {
-  }
-}
+  setup() {},
+};
 </script>
