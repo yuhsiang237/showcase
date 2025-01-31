@@ -48,90 +48,14 @@
         <div class="col bold text1 text-center">作品一覽</div>
       </div>
       <div class="work-item-grid">
-        <div class="work-item-box">
+        <div
+          v-for="item in 10"
+          :key="item"
+          class="work-item-box"
+          @click="openModal"
+        >
           <figure>
             <img src="https://picsum.photos/200/300" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
-          </figure>
-          <h3>
-            <span>XXX</span>
-            <em>標題</em>
-          </h3>
-        </div>
-        <div class="work-item-box">
-          <figure>
-            <img :src="demo" />
           </figure>
           <h3>
             <span>XXX</span>
@@ -164,24 +88,46 @@
     Yuhsiang copyright
   </div>
   <!-- ./footer -->
-  <!-- DModal 组件 -->
-  <button @click="showModal = true">ShowModal</button>
-  <DModal v-show="showModal" @close="showModal = false" />
-  <!---->
+  <!-- 使用 DModal 元件 -->
+  <WorkItemModal @close="handleClose" ref="modal">
+    <div class="container">
+      <div class="row">
+        <div class="col"><img src="https://picsum.photos/200/300" /></div>
+        <div class="col">123<br />456</div>
+      </div>
+    </div>
+  </WorkItemModal>
 </template>
+
 <script>
-import demo from "@/assets/image/demo.png";
+import { ref } from "vue";
+import Demo from "@/assets/image/demo.png";
 import DModal from "@/components/DModal.vue";
 
 export default {
-  name: "MyComponent",
+  name: "show-case-view",
   components: {
-    DModal,
+    WorkItemModal: DModal,
   },
-  data() {
+  setup() {
+    const demo = ref(Demo);
+    const modal = ref(null);
+
+    const openModal = () => {
+      if (modal.value) {
+        modal.value.openModal();
+      }
+    };
+
+    const handleClose = () => {
+      console.log("Modal 被關閉了！");
+    };
+
     return {
       demo,
-      showModal: false,
+      openModal,
+      handleClose,
+      modal,
     };
   },
 };
