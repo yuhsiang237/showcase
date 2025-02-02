@@ -24,9 +24,9 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="skill-enum mb-2">
+          <span class="skill-enum mb-2">
             <div v-for="item in skillData.skills" :key="item">{{ item }}</div>
-          </div>
+          </span>
           <div class="description" v-html="skillData.description"></div>
         </div>
       </div>
@@ -68,8 +68,8 @@
         v-for="item in workExpData"
         :key="item"
       >
-        <div class="col-2 date">{{ item.date }}</div>
-        <div class="col-10 description" v-html="item.description"></div>
+        <div class="col-md-2 col-3 date">{{ item.date }}</div>
+        <div class="col description" v-html="item.description"></div>
       </div>
     </div>
   </div>
@@ -88,10 +88,10 @@
   <WorkItemModal class="work-item-modal" @close="handleClose" ref="modal">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="img col-md-6 col-sm-12">
           <img :src="workItemModalData.img" />
         </div>
-        <div class="col">
+        <div class="content col-md-6 col-sm-12">
           <div class="mb-3">
             <div class="subtitle">
               {{ workItemModalData.subtitle }}
