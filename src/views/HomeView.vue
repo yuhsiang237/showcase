@@ -1,16 +1,16 @@
 <template>
   <!-- 自我介紹 -->
-  <div class="intro-area mb-3">
+  <div class="intro-area">
     <div class="logo">@Yuhsiang237</div>
-    <div class="container large py-4">
+    <div class="container large">
       <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-sm-12">
           <div class="title mb-3">自我介紹</div>
           <div class="medata" v-html="meData"></div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div class="d-flex justify-content-end">
-            <img width="300" :src="MeImg" />
+            <img :src="MeImg" />
           </div>
         </div>
       </div>
