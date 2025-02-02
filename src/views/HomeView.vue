@@ -2,18 +2,15 @@
   <!-- 自我介紹 -->
   <div class="intro-area mb-3">
     <div class="logo">@Yuhsiang237</div>
-    <div class="container py-4">
+    <div class="container large py-4">
       <div class="row">
         <div class="col-8">
-          <div class="text1 mb-3">自我介紹</div>
-          <div v-html="meData"></div>
+          <div class="title mb-3">自我介紹</div>
+          <div class="medata" v-html="meData"></div>
         </div>
         <div class="col-4">
           <div class="d-flex justify-content-end">
-            <img
-              width="300"
-              src="https://avatars.githubusercontent.com/u/12533553?v=4"
-            />
+            <img width="300" :src="MeImg" />
           </div>
         </div>
       </div>
@@ -23,14 +20,14 @@
   <div class="skill-area mb-3">
     <div class="container py-4">
       <div class="row">
-        <div class="col bold mb-3">技術</div>
+        <div class="title col mb-3">技術棧</div>
       </div>
       <div class="row">
         <div class="col">
           <div class="skill-enum mb-2">
             <div v-for="item in skillData.skills" :key="item">{{ item }}</div>
           </div>
-          <div v-html="skillData.description"></div>
+          <div class="description" v-html="skillData.description"></div>
         </div>
       </div>
     </div>
@@ -125,6 +122,7 @@
 <script>
 import { ref } from "vue";
 import Demo from "@/assets/image/demo.png";
+import MeImg from "@/assets/image/me/me.jpeg";
 import EsunbankImg from "@/assets/image/workitem/esunbank.png";
 import KgibankImg from "@/assets/image/workitem/kgibank.png";
 import MgovImg from "@/assets/image/workitem/mgov.png";
@@ -142,7 +140,15 @@ export default {
     const demo = ref(Demo);
     const modal = ref(null);
     const meData = ref(
-      "往前端與畫面呈現邁進。在畢業後五年工作中摸索後發現自己仍然喜歡做與圖像相關的工作。目前主要爲前端網站工程師。",
+      `你好，我是郁翔(YU HSIANG) LAX.<br/><br/>
+      方向是掌握畫面呈現及畫面有關的事物。<br/>
+      在摸索後得出了前端工程師。<br/>
+      在五年工作中，發現自己仍然喜歡做與圖像相關的工作。<br/>
+      而生活上，旅遊、露營、閱讀也是平常的生活樂趣之一。
+      <br/><br/>
+      近期旅遊去了不少地方，比如阿里山、富士山<br/>
+      ...怎麼都是山( ^ω^)
+      `,
     );
     const workItemModalData = ref({
       title: "",
@@ -154,9 +160,12 @@ export default {
     const skillData = {
       skills: ["HTML", "Vue3", "JQuery", "Bootstrap", "CSS/SCSS/RWD"],
       description: `<p>
-      熟練使用Javascript與CSS開發，而目前較常用的前端框架為Vue3。
+      熟練使用Javascript與CSS開發，而目前較常用的前端框架為Vue3
       <br/>
-      熟悉RWD切版、API異步呼叫處理、Restful API串接。</p>`,
+      熟悉RWD切版、API異步呼叫處理、RESTful API串接
+      <br/>
+      熟悉網站完整開發流程，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發      
+      </p>`,
     };
     const workitemData = ref([
       {
@@ -251,6 +260,7 @@ Work From Home遠端協作工作經驗<br/>
       workItemModalData,
       workitemData,
       meData,
+      MeImg,
     };
   },
 };
