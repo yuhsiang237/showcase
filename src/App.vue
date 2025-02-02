@@ -2,7 +2,7 @@
   <div class="banner">
     <div
       class="d-flex text-center align-items-center justify-content-center"
-      style="height: 80vh; color: #fff"
+      style="height: 83vh; color: #fff"
     >
       <div>
         <div
