@@ -152,9 +152,11 @@ export default {
       description: "",
     });
     const skillData = {
-      skills: ["HTML5", "Vue3", "JQuery", "Bootstrap", "CSS/SCSS/RWD"],
-      description: `<p>除了主要寫的Vue3框架外，在其他專案亦碰到了Angular、React，整體寫下來還是Vue3的維護與彈性最好。此外，這份網頁履歷就是使用Vue3製作 (茶)。<br/>
-            熟悉RWD切版與API異步呼叫處理。</p>`,
+      skills: ["HTML", "Vue3", "JQuery", "Bootstrap", "CSS/SCSS/RWD"],
+      description: `<p>
+      熟練使用Javascript與CSS開發，而目前較常用的前端框架為Vue3。
+      <br/>
+      熟悉RWD切版、API異步呼叫處理、Restful API串接。</p>`,
     };
     const workitemData = ref([
       {
