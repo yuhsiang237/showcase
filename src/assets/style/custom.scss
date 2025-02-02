@@ -143,6 +143,42 @@
     transform: rotate(90deg);
   }
 }
+
+.work-item-modal {
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .tag {
+    color: #b0b4b4;
+    letter-spacing: 0.06rem;
+  }
+  .description {
+    max-width: 400px;
+    word-break: break-all;
+    letter-spacing: 0.06rem;
+  }
+  .subtitle {
+    letter-spacing: 0.18rem;
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 1.72rem;
+    letter-spacing: 0.15rem;
+  }
+  button {
+    border: 0px;
+    background: #615b54;
+    height: 50px;
+    width: 100%;
+    max-width: 285px;
+    a {
+      background: #615b54;
+      color: #fff !important;
+      text-decoration: none;
+    }
+  }
+}
 .work-item-area {
   background-color: #fff;
   .work-item-grid {
@@ -155,11 +191,12 @@
       span {
         display: block;
         font-size: 0.8rem;
+        letter-spacing: 0.1rem;
       }
-      em {
+      div {
         display: block;
         margin-top: 0.2em;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.2rem;
         font-size: 1rem;
       }
       figure:hover img {

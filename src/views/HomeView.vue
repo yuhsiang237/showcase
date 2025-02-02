@@ -53,7 +53,7 @@
           </figure>
           <h3>
             <span>{{ item.subtitle }}</span>
-            <em>{{ item.title }}</em>
+            <div>{{ item.title }}</div>
           </h3>
         </div>
       </div>
@@ -83,13 +83,35 @@
   </div>
   <!-- ./footer -->
   <!-- 使用 DModal 元件 -->
-  <WorkItemModal @close="handleClose" ref="modal">
+  <WorkItemModal class="work-item-modal" @close="handleClose" ref="modal">
     <div class="container">
       <div class="row">
         <div class="col">
-          <img width="100%" height="100%" :src="workItemModalData.img" />
+          <img :src="workItemModalData.img" />
         </div>
-        <div class="col">{{ workItemModalData.description }}</div>
+        <div class="col">
+          <div class="mb-3">
+            <div class="subtitle">
+              {{ workItemModalData.subtitle }}
+            </div>
+            <div class="title mb-3">
+              {{ workItemModalData.title }}
+            </div>
+
+            <div
+              class="description mb-2"
+              v-html="workItemModalData.description"
+            ></div>
+            <div class="tag mb-3">
+              <span v-for="item in workItemModalData.tag" :key="item">
+                #{{ item }}
+              </span>
+            </div>
+          </div>
+          <button>
+            <a :href="workItemModalData.link" target="_blank">前往查看</a>
+          </button>
+        </div>
       </div>
     </div>
   </WorkItemModal>
@@ -135,16 +157,20 @@ export default {
         subtitle: "ESUN BANK",
         img: EsunbankImg,
         link: "https://event.esunbank.com.tw/mkt/loan/DG/index.html",
-        description:
-          "玉山銀行信用貸款行員後台，負責用Vue3進行開發，後台應用，有使用路由與元件（component）開發。此外，因為該案而碰觸到Typescript 開發。",
+        description: `<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。
+              使用Vue3，並參與該案元件、頁面前端開發。
+             此外，因為此案而碰觸到Typescript開發。</p>
+          `,
+        tag: ["Vue3", "CSS/SCSS", "HTML", "Typescript", "Javascript"],
       },
       {
-        title: "凱基銀行",
+        title: "凱基網銀",
         subtitle: "KGI BANK",
         img: KgibankImg,
         link: "https://www.kgibank.com.tw/zh-tw/",
         description:
-          "凱基銀行後台，使用Angular.js開放，當初玉山案子做完後來到凱基這邊做新網站的升級。其中有串接過銀行的外國轉帳API",
+          "凱基銀行網銀後台，使用Angular.js開發，當初玉山案子做完後來到凱基這邊做新網站的升級。其中有串接過銀行的外國轉帳API",
+        tag: ["Angular", "CSS/SCSS", "HTML", "Javascript"],
       },
       {
         title: "田邊好幫手",
@@ -152,7 +178,8 @@ export default {
         img: MgovImg,
         link: "https://m.moa.gov.tw/",
         description:
-          "田邊一把抓，負責協助設計師切版，並在需要時進MVC專案修正CSS或Javascript產生之bug",
+          "田邊好幫手，協助設計師切版，並在上線後維護專案，調整CSS與Javascript",
+        tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
       },
       {
         title: "農糧署追溯",
@@ -160,14 +187,17 @@ export default {
         img: AfaImg,
         link: "https://qrc.afa.gov.tw/",
         description:
-          "田邊一把抓，負責協助設計師切版，並在需要時進MVC專案修正CSS或Javascript產生之bug",
+          "農委會政府案，在團隊中負責幫設計師切版，並套用至MVC網站中，使用到了Javascript ES6 、SCSS，並在上線後維護。",
+        tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
       },
       {
-        title: "農業ERP",
+        title: "農產ERP",
         subtitle: "ERP",
         img: ErpImg,
         link: "https://www.linkjoin.com.tw/erp/",
-        description: "負責該網站之切版工作，並與設計師配合釐清客戶需求",
+        description:
+          "負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。",
+        tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
       },
     ]);
 
