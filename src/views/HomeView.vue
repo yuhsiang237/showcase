@@ -104,15 +104,15 @@
               class="description mb-2"
               v-html="workItemModalData.description"
             ></div>
-            <div class="tag mb-3">
-              <span v-for="item in workItemModalData.tag" :key="item">
-                #{{ item }}
-              </span>
-            </div>
           </div>
-          <button>
+          <button class="mb-3">
             <a :href="workItemModalData.link" target="_blank">前往查看</a>
           </button>
+          <div class="tag mb-3">
+            <span v-for="item in workItemModalData.tag" :key="item">
+              #{{ item }}
+            </span>
+          </div>
         </div>
       </div>
     </div>

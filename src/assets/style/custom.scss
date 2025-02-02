@@ -1,4 +1,8 @@
 /* common */
+$main-color: #fff;
+$second-color: #f7f2ed;
+$third-color: #615b54;
+
 * {
   font-size: 1rem;
   font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
@@ -112,7 +116,7 @@
 
 //===== Home =====
 .work-exp-area {
-  background-color: #f2f2f2;
+  background-color: $second-color;
   min-height: 400px;
   letter-spacing: 0.08rem;
 
@@ -130,7 +134,7 @@
 .skill-area {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f0f0f0;
+  background-color: $second-color;
   letter-spacing: 0.08rem;
   .title {
     font-size: 1.72rem;
@@ -216,12 +220,11 @@
   }
   button {
     border: 0px;
-    background: #615b54;
+    background: $third-color;
     height: 50px;
     width: 100%;
     max-width: 285px;
     a {
-      background: #615b54;
       color: #fff !important;
       text-decoration: none;
     }
@@ -287,6 +290,7 @@
   }
 }
 .footer-area {
-  background-color: #a9a9a9;
+  background-color: white;
+
   min-height: 60px;
 }
