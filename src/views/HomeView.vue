@@ -66,20 +66,25 @@
       <div class="row">
         <div class="col bold mb-3">個人經歷</div>
       </div>
-      <div class="row work-exp-card">
-        <div class="col-2 date">2018-2020</div>
-        <div class="col-10 description">做了OOO使用了技術</div>
-      </div>
-      <div class="row work-exp-card">
-        <div class="col-2 date">2018-2020</div>
-        <div class="col-10 description">做了OOO使用了技術</div>
+      <div
+        class="row work-exp-card mb-2"
+        v-for="item in workExpData"
+        :key="item"
+      >
+        <div class="col-2 date">{{ item.date }}</div>
+        <div class="col-10 description" v-html="item.description"></div>
       </div>
     </div>
   </div>
   <!-- ./個人經歷 -->
   <!-- footer -->
   <div class="d-flex justify-content-center align-items-center footer-area">
-    Yuhsiang copyright
+    2025 copyright & designed by LAX&nbsp;
+    <a
+      style="color: black; font-weight: bold; text-decoration: none"
+      href="https://github.com/yuhsiang237"
+      >@yuhsiang237</a
+    >&nbsp;
   </div>
   <!-- ./footer -->
   <!-- 使用 DModal 元件 -->
@@ -201,6 +206,28 @@ export default {
       },
     ]);
 
+    const workExpData = ref([
+      {
+        date: "2022-2024",
+        description: `<div class="mb-1"><b>緯創軟體股份有限公司 / 軟體工程師</b></div>
+        銀行駐點開發<br/>
+玉山銀行：信用貸款後台系統、後台人員核貸審核系統，Vue3<br/>
+凱基銀行：凱基銀行外幣轉帳與網銀開發，Angular`,
+      },
+      {
+        date: "2021",
+        description: `<div class="mb-1"><b>個人接案 / 軟體工程師</b></div>
+        網站工程師、API撰寫<br/>`,
+      },
+      {
+        date: "2018-2020",
+        description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
+        前端網站工程師，負責協助設計師切版、軟體應用維護<br/>
+Work From Home遠端協作工作經驗<br/>
+在任職期間參予了7份專案,皆順利完成結案。<br/>
+        `,
+      },
+    ]);
     const openModal = (workItem) => {
       if (modal.value) {
         modal.value.openModal();
@@ -213,6 +240,7 @@ export default {
     };
 
     return {
+      workExpData,
       demo,
       openModal,
       handleClose,

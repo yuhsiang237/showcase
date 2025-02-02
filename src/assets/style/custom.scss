@@ -8,7 +8,7 @@
   min-height: 100vh;
 }
 .container {
-  max-width: 980px;
+  max-width: 900px;
 }
 .bold {
   font-weight: bold;
@@ -190,12 +190,12 @@
     .work-item-box {
       span {
         display: block;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         letter-spacing: 0.1rem;
       }
       div {
         display: block;
-        margin-top: 0.2em;
+        margin-top: 0.2rem;
         letter-spacing: 0.2rem;
         font-size: 1rem;
       }
@@ -220,5 +220,5 @@
 }
 .footer-area {
   background-color: #a9a9a9;
-  min-height: 100px;
+  min-height: 60px;
 }
