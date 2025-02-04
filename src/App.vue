@@ -1,5 +1,13 @@
 <template>
-  <div class="banner">
+  <div
+    class="banner"
+    :style="{
+      backgroundImage:
+        'linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(' +
+        backgroundImage +
+        ')',
+    }"
+  >
     <div
       class="d-flex text-center align-items-center justify-content-center"
       style="height: 83vh; color: #fff"
@@ -18,12 +26,15 @@
 </template>
 <script>
 import { RouterView } from "vue-router";
+import backgroundImage from "@/assets/image/bg.png";
 
 export default {
   name: "app",
   components: {
     RouterView,
   },
-  setup() {},
+  setup() {
+    return { backgroundImage };
+  },
 };
 </script>
