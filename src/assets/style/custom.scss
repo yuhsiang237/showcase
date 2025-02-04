@@ -199,6 +199,13 @@ a {
 }
 
 .work-item-modal {
+  button.mb-3 a i {
+    transition: transform 0.3s ease;
+  }
+  button.mb-3:hover i {
+    transform: translateX(5px);
+  }
+
   img {
     max-width: 300px;
     width: 100%;
