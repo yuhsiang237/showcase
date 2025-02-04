@@ -160,12 +160,25 @@ a {
   .skill-enum {
     display: flex !important;
     flex-wrap: wrap !important;
+
     div {
-      border: solid 1px #252626;
+      display: inline-block;
       margin-right: 5px;
       margin-bottom: 5px;
       padding-right: 15px;
       padding-left: 15px;
+      color: $third-color; /* 默認文字顏色 */
+      background-color: transparent; /* 默認背景顏色為透明 */
+      border: 1px solid $third-color;
+      text-align: center;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease; /* 平滑過渡背景顏色和文字顏色 */
+    }
+
+    div:hover {
+      color: white; /* 文字顏色變為白色 */
+      background-color: $third-color; /* 背景顏色變為黑色 */
     }
   }
 }
