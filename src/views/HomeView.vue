@@ -169,7 +169,7 @@ export default {
       熟悉RWD切版、API異步呼叫處理、RESTful API串接
       <br/>
       熟悉網站完整開發流程，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發<br/>
-      專案管理則使用Git      
+      使用Git進行專案存庫代碼控管      
       </p>`,
     };
     const workitemData = ref([
@@ -225,20 +225,22 @@ export default {
         date: "2022-2024",
         description: `<div class="mb-1"><b>緯創軟體股份有限公司 / 軟體工程師</b></div>
         銀行駐點開發<br/>
-玉山銀行：信用貸款後台系統、後台人員核貸審核系統，Vue3<br/>
-凱基銀行：凱基銀行外幣轉帳與網銀開發，Angular`,
+1.玉山銀行：信用貸款後台系統、後台人員核貸審核系統，Vue3<br/>
+<span class="text-secondary">內容包含信用貸款API串接、樣式調整、應用頁面申貸流程撰寫</span><br/>
+2.凱基銀行：凱基銀行外幣轉帳與網銀開發，Angular<br/>
+<span class="text-secondary">內容包含凱基網銀網站開發、外幣轉帳API串接、多語系i18n</span>`,
       },
       {
         date: "2021",
         description: `<div class="mb-1"><b>個人接案 / 軟體工程師</b></div>
-        網站工程師、API撰寫<br/>`,
+        網站工程師、協助API撰寫<br/>`,
       },
       {
         date: "2018-2020",
         description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
         前端網站工程師，負責協助設計師切版、軟體應用維護<br/>
-Work From Home遠端協作工作經驗<br/>
-在任職期間參予了7份專案，皆順利完成結案。<br/>
+Work From Home遠端協作<br/>
+在任職期間參予了7份專案，主要為政府案，皆順利完成結案。<br/>
         `,
       },
     ]);
