@@ -1,4 +1,5 @@
 # showcase
+![workflow](https://github.com/yuhsiang237/showcase/actions/workflows/node.js.yml/badge.svg)
 
 ## Recommended IDE Setup
 
