@@ -75,7 +75,7 @@
   </div>
   <!-- ./個人經歷 -->
   <!-- footer -->
-  <div class="d-flex justify-content-center align-items-center footer-area">
+  <div class="footer-area">
     2025 copyright & designed by LAX&nbsp;
     <a
       style="color: black; font-weight: bold; text-decoration: none"
