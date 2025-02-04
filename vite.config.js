@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/showcase/',  // 设置 GitHub Pages 路徑
   plugins: [
     vue(),
     vueDevTools(),
