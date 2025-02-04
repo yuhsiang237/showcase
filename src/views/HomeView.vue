@@ -150,6 +150,8 @@ export default {
       <br/><br/>
       近期旅遊去了不少地方，比如阿里山、富士山<br/>
       ...怎麼都是山( ^ω^)
+      <br/><br/>
+      <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
       `,
     );
     const workItemModalData = ref({
