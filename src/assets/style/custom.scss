@@ -1,6 +1,6 @@
 /* common */
 $main-color: #fff;
-$second-color: #f7f2ed;
+$second-color: #faf7f4;
 $third-color: #615b54;
 
 * {
@@ -29,6 +29,16 @@ $third-color: #615b54;
 }
 .bold {
   font-weight: bold;
+}
+.title1 {
+  letter-spacing: 0.1rem;
+  font-size: 1.72rem;
+  font-weight: normal;
+}
+.title2 {
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  font-weight: normal;
 }
 .text1 {
   font-size: 1.3rem;
@@ -136,10 +146,6 @@ $third-color: #615b54;
   padding-bottom: 40px;
   background-color: $second-color;
   letter-spacing: 0.08rem;
-  .title {
-    font-size: 1.72rem;
-    letter-spacing: 0.15rem;
-  }
   .description {
     letter-spacing: 0.15rem;
     line-height: 1.8;
@@ -162,11 +168,6 @@ $third-color: #615b54;
   margin-bottom: 100px;
   img {
     width: 300px;
-  }
-  .title {
-    letter-spacing: 0.1rem;
-    font-size: 1.72rem;
-    font-weight: normal;
   }
   .medata {
     letter-spacing: 0.15rem;

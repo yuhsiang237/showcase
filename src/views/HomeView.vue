@@ -5,7 +5,7 @@
     <div class="container large">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <div class="title mb-3">自我介紹</div>
+          <div class="title1 mb-3">自我介紹</div>
           <div class="medata" v-html="meData"></div>
         </div>
         <div class="col-md-4 col-sm-12">
@@ -20,7 +20,7 @@
   <div class="skill-area mb-3">
     <div class="container py-4">
       <div class="row">
-        <div class="title col mb-3">技術棧</div>
+        <div class="title1 col mb-3">技術棧</div>
       </div>
       <div class="row">
         <div class="col">
@@ -36,7 +36,7 @@
   <div class="work-item-area">
     <div class="container pt-3 pb-5">
       <div class="row">
-        <div class="col bold text1 text-center">作品一覽</div>
+        <div class="col title2 text-center">作品一覽</div>
       </div>
       <div class="work-item-grid">
         <div
@@ -61,7 +61,7 @@
   <div class="work-exp-area">
     <div class="container py-4">
       <div class="row">
-        <div class="col bold mb-3">個人經歷</div>
+        <div class="col title2 mb-3">個人經歷</div>
       </div>
       <div
         class="row work-exp-card mb-2"
@@ -106,7 +106,9 @@
             ></div>
           </div>
           <button class="mb-3">
-            <a :href="workItemModalData.link" target="_blank">前往查看</a>
+            <a :href="workItemModalData.link" target="_blank"
+              >前往查看 <i class="fa-sm fas fa-angle-right"></i
+            ></a>
           </button>
           <div class="tag mb-3">
             <span v-for="item in workItemModalData.tag" :key="item">
@@ -160,11 +162,12 @@ export default {
     const skillData = {
       skills: ["HTML", "Vue3", "JQuery", "Bootstrap", "CSS/SCSS/RWD"],
       description: `<p>
-      熟練使用Javascript與CSS開發，而目前較常用的前端框架為Vue3
+      熟練使用Javascript與CSS搭配Bootstrap開發，而目前較常用的前端框架為Vue3
       <br/>
       熟悉RWD切版、API異步呼叫處理、RESTful API串接
       <br/>
-      熟悉網站完整開發流程，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發      
+      熟悉網站完整開發流程，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發<br/>
+      專案管理則使用Git      
       </p>`,
     };
     const workitemData = ref([
@@ -173,9 +176,7 @@ export default {
         subtitle: "ESUN BANK",
         img: EsunbankImg,
         link: "https://event.esunbank.com.tw/mkt/loan/DG/index.html",
-        description: `<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。
-              使用Vue3，並參與該案元件、頁面前端開發。
-             此外，因為此案而碰觸到Typescript開發。</p>
+        description: `<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。使用Vue3，並參與該案元件、頁面前端開發。此外，因為此案而碰觸到Typescript開發。</p>
           `,
         tag: ["Vue3", "CSS/SCSS", "HTML", "Typescript", "Javascript"],
       },
@@ -235,7 +236,7 @@ export default {
         description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
         前端網站工程師，負責協助設計師切版、軟體應用維護<br/>
 Work From Home遠端協作工作經驗<br/>
-在任職期間參予了7份專案,皆順利完成結案。<br/>
+在任職期間參予了7份專案，皆順利完成結案。<br/>
         `,
       },
     ]);
