@@ -2,7 +2,9 @@
   <!-- 自我介紹 -->
   <div class="intro-area">
     <div class="logo">@Yuhsiang237</div>
-    <div class="container large">
+    <div
+      class="container large animate__animated animate__fadeIn animate__delay-1s"
+    >
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="title1 mb-3">自我介紹</div>
@@ -18,7 +20,9 @@
   </div>
   <!-- 技術 -->
   <div class="skill-area mb-3">
-    <div class="container py-4">
+    <div
+      class="container py-4 animate__animated animate__fadeInUp animate__delay-1s"
+    >
       <div class="row">
         <div class="title1 col mb-3">技術棧</div>
       </div>
@@ -33,7 +37,9 @@
     </div>
   </div>
   <!-- 作品 -->
-  <div class="work-item-area">
+  <div
+    class="work-item-area animate__animated animate__fadeInUp animate__delay-1s"
+  >
     <div class="container pt-3 pb-5">
       <div class="row">
         <div class="col title2 text-center">作品一覽</div>
