@@ -181,6 +181,10 @@ a {
       background-color: $third-color; /* 背景顏色變為黑色 */
     }
   }
+  @media (max-width: 900px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .intro-area {
   position: relative !important;
@@ -201,8 +205,8 @@ a {
     transform: rotate(90deg);
   }
   @media (max-width: 900px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 90px;
     margin-bottom: 90px;
     min-height: 0vh;
