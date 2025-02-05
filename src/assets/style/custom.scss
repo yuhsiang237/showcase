@@ -56,7 +56,23 @@ a {
     font-weight: bold;
   }
 }
+// === go top 元件
+.go-top {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
 
+.go-top:hover {
+  opacity: 1;
+}
 // === d modal 元件 ====
 .d_modal {
   position: fixed;
