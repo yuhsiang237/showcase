@@ -2,13 +2,15 @@
   <!-- 自我介紹 -->
   <div class="intro-area">
     <div class="logo">@Yuhsiang237</div>
-    <div
-      class="container large animate__animated animate__fadeIn animate__delay-1s"
-    >
-      <div class="row">
+    <div class="container large">
+      <div class="row wow fadeInUp" data-wow-duration="2s">
         <div class="col-md-8 col-sm-12">
           <div class="title1 mb-3">自我介紹</div>
-          <div class="medata" v-html="meData"></div>
+          <div
+            data-wow-duration="10s"
+            class="medata wow animate__animated animate__fadeIn"
+            v-html="meData"
+          ></div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="d-flex justify-content-end">
@@ -20,9 +22,7 @@
   </div>
   <!-- 技術 -->
   <div class="skill-area mb-3">
-    <div
-      class="container py-4 animate__animated animate__fadeInUp animate__delay-1s"
-    >
+    <div class="container py-4 wow fadeIn" data-wow-duration="1s">
       <div class="row">
         <div class="title1 col mb-3">技術棧</div>
       </div>
@@ -38,8 +38,11 @@
   </div>
   <!-- 作品 -->
   <div
-    class="work-item-area animate__animated animate__fadeInUp animate__delay-1s"
+    class="work-item-area wow fadeIn"
+    data-wow-duration="2s"
+    data-wow-delay="1s"
   >
+    >
     <div class="container pt-3 pb-5">
       <div class="row">
         <div class="col title2 text-center">作品一覽</div>
@@ -65,7 +68,11 @@
   <!-- ./作品-->
   <!-- 個人經歷 -->
   <div class="work-exp-area">
-    <div class="container py-4">
+    <div
+      class="container py-4 wow fadeIn"
+      data-wow-duration="2s"
+      data-wow-delay="1s"
+    >
       <div class="row">
         <div class="col title2 mb-3">個人經歷</div>
       </div>
