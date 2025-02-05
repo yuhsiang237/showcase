@@ -37,12 +37,7 @@
     </div>
   </div>
   <!-- 作品 -->
-  <div
-    class="work-item-area wow fadeIn"
-    data-wow-duration="2s"
-    data-wow-delay="1s"
-  >
-    >
+  <div class="work-item-area wow fadeIn" data-wow-duration="2s">
     <div class="container pt-3 pb-5">
       <div class="row">
         <div class="col title2 text-center">作品一覽</div>
@@ -68,11 +63,7 @@
   <!-- ./作品-->
   <!-- 個人經歷 -->
   <div class="work-exp-area">
-    <div
-      class="container py-4 wow fadeIn"
-      data-wow-duration="2s"
-      data-wow-delay="1s"
-    >
+    <div class="container py-4 wow fadeIn" data-wow-duration="2s">
       <div class="row">
         <div class="col title2 mb-3">個人經歷</div>
       </div>
