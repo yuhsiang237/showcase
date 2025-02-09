@@ -257,6 +257,13 @@ Work From Home遠端協作<br/>
 
     const handleClose = () => {
       console.log("Modal 被關閉了！");
+      workItemModalData.value = {
+      title: "",
+      subtitle: "",
+      img: "",
+      link: "",
+      description: "",
+    };
     };
 
     return {
