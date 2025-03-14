@@ -261,7 +261,7 @@ export default {
 樣式支援RWD行動裝置瀏覽。<br/>`,
         tag: ["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"],
       },{
-        title: "PDF產製",
+        title: "PDF報表產製",
         subtitle: "PDF",
         img: PDFImg,
         link: "https://github.com/yuhsiang237/ReportPDF",
