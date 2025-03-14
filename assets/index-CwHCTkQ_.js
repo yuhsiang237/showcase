@@ -58,7 +58,7 @@
 在資料庫規劃上也考量到現實情況，亦有多對多關聯的設計。<br/>
 為保護帳號安全，密碼採用HASH與加鹽方式儲存。<br/>
 資料驗證欄位採用Fluent Validation及部分Model Validation。<br/>
-樣式支援RWD行動裝置瀏覽。<br/>`,tag:["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"]},{title:"PDF產製",subtitle:"PDF",img:Ga,link:"https://github.com/yuhsiang237/ReportPDF",description:`此為自行練習PDF產製專案。<br/>
+樣式支援RWD行動裝置瀏覽。<br/>`,tag:["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"]},{title:"PDF報表產製",subtitle:"PDF",img:Ga,link:"https://github.com/yuhsiang237/ReportPDF",description:`此為自行練習PDF產製專案。<br/>
          因應當時銀行工作需產製大量的PDF報表`,tag:["C# .net core"]}]);return{workExpData:Be([{date:"2024-2025",description:`<div class="mb-1"><b>兼職 / 多方職涯嘗試</b></div>
         兼職了「連鎖日商壽司店-藏壽司」、「UBER EAT外送」，進行多方嘗試後，並梳理職涯方向。會做這個嘗試是因為過去只做過工程師，透過兼職了解除了工程師外的產業，並且在30歲前確定好職涯方向。<br/>
         `},{date:"2024",description:`<div class="mb-1"><b>一卡通票證股份有限公司 / 專案工程師</b></div>
