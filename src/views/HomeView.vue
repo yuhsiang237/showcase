@@ -151,9 +151,14 @@ export default {
       因此，職涯方向為前端軟體工程師。<br/>
       並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。<br/>
       <br/>
-      <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
+      對於新事物掌握速度快，因資訊產業迭代速度快，對於新出之框架或衍伸服務，可以在2週內熟悉至可上手程度。(依過往工作經歷)
+      <br/>
+      <br/>
+      <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github - yuhsiang237</a>
       <br/>
       <a href="https://yuhsiang237.github.io/"><i class="fa-solid fa-earth-americas"></i> 程式筆記網站</a>
+      <br/>
+      <a href="https://leetcode.com/u/yuhsiang237/"><i class="fa-solid fa-code"></i> Leetcode</a>
 
       
       
@@ -253,7 +258,9 @@ export default {
  - 前端:現行網站維護，依照需求單進行調整<br/>
  (技術:Angular、Javscript ES6、SCSS)<br/>
  - 後端:撰寫微服務API、行內API對接<br/>
- (技術:C#、.net core API、Docker、MSSQL)<br/>`,
+ (技術:C#、.net core API、Docker、MSSQL)<br/>
+註:因駐點調動通勤長離職(1hr以上)
+ `,
       },
       {
         date: "2021",
