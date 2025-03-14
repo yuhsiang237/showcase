@@ -175,7 +175,16 @@ export default {
       description: "",
     });
     const skillData = {
-      skills: ["HTML", "Vue3","Javscript ES6", "JQuery", "Bootstrap", "CSS/SCSS/RWD","C# .net core API","SQL Server"],
+      skills: [
+        "HTML",
+        "Vue3",
+        "Javscript ES6",
+        "JQuery",
+        "Bootstrap",
+        "CSS/SCSS/RWD",
+        "C# .net core API",
+        "SQL Server",
+      ],
       description: `<p>
       熟練使用Javascript與SCSS搭配Bootstrap開發，最近的工作使用框架為Vue3
       <br/>
@@ -238,48 +247,51 @@ export default {
           "負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。",
         tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
       },
-         {
+      {
         title: "Vue3常見操作整理",
         subtitle: "Vue3",
         img: Vue3Img,
         link: "https://yuhsiang237.github.io/vue-exercise/",
-        description:
-          "此為Vue3中開發時常會使用到的語法糖紀錄",
-        tag: ["Vue3","Javascript"],
+        description: "此為Vue3中開發時常會使用到的語法糖紀錄",
+        tag: ["Vue3", "Javascript"],
       },
-         {
+      {
         title: "Vue3個人履歷",
         subtitle: "Vue3",
         img: Vue3Img,
         link: "https://github.com/yuhsiang237/showcase",
         description:
           "即本頁面之個人履歷。使用github存庫進行CI、gh-pages部署，該連結前往為專案儲存庫",
-        tag: ["Vue3","Javascript"],
+        tag: ["Vue3", "Javascript"],
       },
-     {
+      {
         title: "商品進出貨系統",
         subtitle: "Order System",
         img: ODImg,
         link: "https://github.com/yuhsiang237/Order-System",
-        description:
-          `此為自行練習開發之專案。<br/>
+        description: `此為自行練習開發之專案。<br/>
           主要用來出退貨商品訂單，能夠建立出貨、退貨訂單，並具備商品庫存機制、多角色權限、權限限制(新、刪、修、查)等頁面的細微權限。<br/>
 在資料庫規劃上也考量到現實情況，亦有多對多關聯的設計。<br/>
 為保護帳號安全，密碼採用HASH與加鹽方式儲存。<br/>
 資料驗證欄位採用Fluent Validation及部分Model Validation。<br/>
 樣式支援RWD行動裝置瀏覽。<br/>`,
-        tag: ["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"],
-      },{
+        tag: [
+          "JQuery",
+          "Javascript",
+          "C# .net core MVC",
+          "SQL Server",
+          "Entity Framework",
+        ],
+      },
+      {
         title: "PDF報表產製",
         subtitle: "PDF",
         img: PDFImg,
         link: "https://github.com/yuhsiang237/ReportPDF",
-        description:
-          `此為自行練習PDF產製專案。<br/>
+        description: `此為自行練習PDF產製專案。<br/>
          因應當時銀行工作需產製大量的PDF報表`,
         tag: ["C# .net core"],
       },
-      
     ]);
 
     const workExpData = ref([
