@@ -249,7 +249,7 @@ export default {
  (技術:C#、.net core API、Docker、MSSQL、PostgreSQL)<br/>
 <br/>
 
-◎凱基銀行：外幣轉帳、網銀開發、卡片點數兌換、多語系i18n<br/>
+◎凱基銀行：外幣轉帳、網銀開發、卡片點數兌換、多語系i18n <br/>
  - 前端:現行網站維護，依照需求單進行調整<br/>
  (技術:Angular、Javscript ES6、SCSS)<br/>
  - 後端:撰寫微服務API、行內API對接<br/>
@@ -266,6 +266,7 @@ export default {
         description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
         前端網站工程師，與設計師協作，含切版工作、設計討論、專案上線後與後端程式調整<br/>
         在任職期間參予了7份專案，主要為政府案，皆順利完成結案。<br/>
+        團隊12人以上協作。<br/>
         (技術: HTML、SCSS、JQuery、Javascript ES6、C#、.net core MVC、React)<br/>
         `,
       },
