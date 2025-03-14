@@ -247,6 +247,15 @@ export default {
           "此為Vue3中開發時常會使用到的語法糖紀錄",
         tag: ["Vue3","Javascript"],
       },
+         {
+        title: "Vue3個人履歷",
+        subtitle: "Vue3",
+        img: Vue3Img,
+        link: "https://github.com/yuhsiang237/showcase",
+        description:
+          "即本頁面之個人履歷。使用github存庫進行CI、gh-pages部署，該連結前往為專案儲存庫",
+        tag: ["Vue3","Javascript"],
+      },
      {
         title: "商品進出貨系統",
         subtitle: "Order System",
