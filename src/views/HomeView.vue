@@ -135,6 +135,7 @@ import MgovImg from "@/assets/image/workitem/mgov.png";
 import AfaImg from "@/assets/image/workitem/afa.png";
 import ErpImg from "@/assets/image/workitem/erp.png";
 import Vue3Img from "@/assets/image/workitem/vue3.png";
+import ODImg from "@/assets/image/workitem/od.png";
 
 import DModal from "@/components/DModal.vue";
 
@@ -245,6 +246,21 @@ export default {
           "此為Vue3中開發時常會使用到的語法糖紀錄",
         tag: ["Vue3","Javascript"],
       },
+     {
+        title: "商品進出貨系統",
+        subtitle: "Order System",
+        img: ODImg,
+        link: "https://github.com/yuhsiang237/Order-System",
+        description:
+          `此為自行練習開發之專案。<br/>
+          主要用來出退貨商品訂單，能夠建立出貨、退貨訂單，並具備商品庫存機制、多角色權限、權限限制(新、刪、修、查)等頁面的細微權限。<br/>
+在資料庫規劃上也考量到現實情況，亦有多對多關聯的設計。<br/>
+為保護帳號安全，密碼採用HASH與加鹽方式儲存。<br/>
+資料驗證欄位採用Fluent Validation及部分Model Validation。<br/>
+樣式支援RWD行動裝置瀏覽。<br/>`,
+        tag: ["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"],
+      },
+      
     ]);
 
     const workExpData = ref([
