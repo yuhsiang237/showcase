@@ -146,15 +146,11 @@ export default {
     const demo = ref(Demo);
     const modal = ref(null);
     const meData = ref(
-      `你好，我是郁翔(YU HSIANG) LAX.<br/><br/>
-      方向是掌握畫面呈現及畫面有關的事物。<br/>
-      在摸索後得出了前端工程師。<br/>
-      在五年工作中，發現自己仍然喜歡做與圖像相關的工作。<br/>
-      而生活上，旅遊、露營、閱讀也是平常的生活樂趣之一。
-      <br/><br/>
-      近期旅遊去了不少地方，比如阿里山、富士山<br/>
-      ...怎麼都是山( ^ω^)
-      <br/><br/>
+      `你好，我是郁翔(YU HSIANG)<br/><br/>
+      在過往工作中，發覺仍然喜歡做與圖像相關的工作。<br/>
+      因此，職涯方向為前端軟體工程師。<br/>
+      並以能穩定開發、產出為主。<br/>
+      <br/>
       <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
       `,
     );
@@ -166,14 +162,15 @@ export default {
       description: "",
     });
     const skillData = {
-      skills: ["HTML", "Vue3", "JQuery", "Bootstrap", "CSS/SCSS/RWD"],
+      skills: ["HTML", "Vue3","Javscript ES6", "JQuery", "Bootstrap", "CSS/SCSS/RWD","C# .net core API"],
       description: `<p>
-      熟練使用Javascript與CSS搭配Bootstrap開發，而目前較常用的前端框架為Vue3
+      熟練使用Javascript與SCSS搭配Bootstrap開發，最近的工作使用框架為Vue3
       <br/>
-      熟悉RWD切版、API異步呼叫處理、RESTful API串接
+      熟悉RWD切版、API異步呼叫處理(併發/同步)、RESTful API串接
       <br/>
-      熟悉網站完整開發流程，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發<br/>
-      使用Git進行專案存庫代碼控管      
+      熟悉網站完整開發流程(敏捷開發)，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發<br/>
+      使用Git進行專案存庫代碼控管(Azure DevOps / Gitlab)<br/>
+      專案討論軟體(Teams)<br/>
       </p>`,
     };
     const workitemData = ref([
@@ -226,25 +223,45 @@ export default {
 
     const workExpData = ref([
       {
+        date: "2024-2025",
+        description: `<div class="mb-1"><b>兼職 / 多方職涯嘗試</b></div>
+        兼職了「連鎖日商壽司店-藏壽司」、「UBER EAT外送」，進行多方嘗試後，並梳理職涯方向。會做這個嘗試是因為過去只做過工程師，透過兼職了解除了工程師外的產業，並且在30歲前確定好職涯方向。<br/>
+        `,
+      },
+      {
+        date: "2024",
+        description: `<div class="mb-1"><b>一卡通票證股份有限公司 / 專案工程師</b></div>
+        負責底層交易系統開發，為「iPASS MONEY乘車碼」、「一卡通刷卡」的底層專案，為純SQL Server與Stored Procedure資料庫專案，工作一段時間後評估不大適合。與過往工作關聯性低，因偏向在程式端寫程式，而非在純資料庫上。`,
+      },
+      {
         date: "2022-2024",
-        description: `<div class="mb-1"><b>緯創軟體股份有限公司 / 軟體工程師</b></div>
-        銀行駐點開發<br/>
-1.玉山銀行：信用貸款後台系統、後台人員核貸審核系統，Vue3<br/>
-<span class="text-secondary">內容包含信用貸款API串接、樣式調整、應用頁面申貸流程撰寫</span><br/>
-2.凱基銀行：凱基銀行外幣轉帳與網銀開發，Angular<br/>
-<span class="text-secondary">內容包含凱基網銀網站開發、外幣轉帳API串接、多語系i18n</span>`,
+        description: `<div class="mb-1"><b>緯創軟體股份有限公司 / 軟體工程師(全端)</b></div>
+        [銀行駐點開發]<br/>
+◎玉山銀行：信用貸款整合系統<br/>
+ - 前端:開發行員後台的貸款審核系統，申貸至核貸，處理頁面百頁以上，API串接百隻以上<br/>
+ (技術:Vue3、Typescript、SCSS)<br/>
+ - 後端:撰寫微服務API，並依照需求提供前端網站串接，並撰寫單元測試供QA驗測<br/>
+ (技術:C#、.net core API、Docker、MSSQL、PostgreSQL)<br/>
+<br/>
+
+◎凱基銀行：外幣轉帳、網銀開發、卡片點數兌換、多語系i18n<br/>
+ - 前端:現行網站維護，依照需求單進行調整<br/>
+ (技術:Angular、Javscript ES6、SCSS)<br/>
+ - 後端:撰寫微服務API、行內API對接<br/>
+ (技術:C#、.net core API、Docker、MSSQL)<br/>`,
       },
       {
         date: "2021",
         description: `<div class="mb-1"><b>個人接案 / 軟體工程師</b></div>
-        網站工程師、協助API撰寫<br/>`,
+        網站工程師、API撰寫。<br/>
+        內容主要為Google Firebase與Google Flutter專案開發。<br/>`,
       },
       {
         date: "2018-2020",
         description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
-        前端網站工程師，負責協助設計師切版、軟體應用維護<br/>
-Work From Home遠端協作<br/>
-在任職期間參予了7份專案，主要為政府案，皆順利完成結案。<br/>
+        前端網站工程師，與設計師協作，含切版工作、設計討論、專案上線後與後端程式調整<br/>
+        在任職期間參予了7份專案，主要為政府案，皆順利完成結案。<br/>
+        (技術: HTML、SCSS、JQuery、Javascript ES6、C#、.net core MVC、React)<br/>
         `,
       },
     ]);
