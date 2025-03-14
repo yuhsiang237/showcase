@@ -162,7 +162,7 @@ export default {
       description: "",
     });
     const skillData = {
-      skills: ["HTML", "Vue3","Javscript ES6", "JQuery", "Bootstrap", "CSS/SCSS/RWD","C# .net core API"],
+      skills: ["HTML", "Vue3","Javscript ES6", "JQuery", "Bootstrap", "CSS/SCSS/RWD","C# .net core API","SQL Server"],
       description: `<p>
       熟練使用Javascript與SCSS搭配Bootstrap開發，最近的工作使用框架為Vue3
       <br/>
