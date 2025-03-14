@@ -152,6 +152,11 @@ export default {
       並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。<br/>
       <br/>
       <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
+      <br/>
+      <a href="https://yuhsiang237.github.io/"><i class="fa-solid fa-earth-americas"></i> 程式筆記網站</a>
+
+      
+      
       `,
     );
     const workItemModalData = ref({
