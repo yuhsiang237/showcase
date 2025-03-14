@@ -24,7 +24,7 @@
   <div class="skill-area mb-3">
     <div class="container py-4 wow fadeIn" data-wow-duration="1s">
       <div class="row">
-        <div class="title1 col mb-3">技術棧</div>
+        <div class="title2 col mb-3">技術棧</div>
       </div>
       <div class="row">
         <div class="col">
