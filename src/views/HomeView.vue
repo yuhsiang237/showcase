@@ -134,6 +134,7 @@ import KgibankImg from "@/assets/image/workitem/kgibank.png";
 import MgovImg from "@/assets/image/workitem/mgov.png";
 import AfaImg from "@/assets/image/workitem/afa.png";
 import ErpImg from "@/assets/image/workitem/erp.png";
+import Vue3Img from "@/assets/image/workitem/vue3.png";
 
 import DModal from "@/components/DModal.vue";
 
@@ -234,6 +235,15 @@ export default {
         description:
           "負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。",
         tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
+      },
+         {
+        title: "Vue3常見操作整理",
+        subtitle: "Vue3",
+        img: Vue3Img,
+        link: "https://yuhsiang237.github.io/vue-exercise/",
+        description:
+          "此為Vue3中開發時常會使用到的語法糖紀錄",
+        tag: ["Vue3","Javascript"],
       },
     ]);
 
