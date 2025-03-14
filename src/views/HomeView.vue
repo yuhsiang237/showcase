@@ -128,7 +128,7 @@
 <script>
 import { ref } from "vue";
 import Demo from "@/assets/image/demo.png";
-import MeImg from "@/assets/image/me/me.jpeg";
+import MeImg from "@/assets/image/me/me2.jpg";
 import EsunbankImg from "@/assets/image/workitem/esunbank.png";
 import KgibankImg from "@/assets/image/workitem/kgibank.png";
 import MgovImg from "@/assets/image/workitem/mgov.png";
