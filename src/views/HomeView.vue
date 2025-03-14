@@ -136,6 +136,7 @@ import AfaImg from "@/assets/image/workitem/afa.png";
 import ErpImg from "@/assets/image/workitem/erp.png";
 import Vue3Img from "@/assets/image/workitem/vue3.png";
 import ODImg from "@/assets/image/workitem/od.png";
+import PDFImg from "@/assets/image/workitem/pdf.png";
 
 import DModal from "@/components/DModal.vue";
 
@@ -156,11 +157,11 @@ export default {
       對於新事物掌握速度快，因資訊產業迭代速度快，對於新出之框架或衍伸服務，可以在2週內熟悉至可上手程度。(依過往工作經歷)
       <br/>
       <br/>
-      <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github - yuhsiang237</a>
+      <a target="_blank" href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github - yuhsiang237</a>
       <br/>
-      <a href="https://yuhsiang237.github.io/"><i class="fa-solid fa-earth-americas"></i> 程式筆記網站</a>
+      <a target="_blank" href="https://yuhsiang237.github.io/"><i class="fa-solid fa-earth-americas"></i> 程式筆記網站</a>
       <br/>
-      <a href="https://leetcode.com/u/yuhsiang237/"><i class="fa-solid fa-code"></i> Leetcode</a>
+      <a target="_blank" href="https://leetcode.com/u/yuhsiang237/"><i class="fa-solid fa-code"></i> Leetcode</a>
 
       
       
@@ -259,6 +260,15 @@ export default {
 資料驗證欄位採用Fluent Validation及部分Model Validation。<br/>
 樣式支援RWD行動裝置瀏覽。<br/>`,
         tag: ["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"],
+      },{
+        title: "PDF產製",
+        subtitle: "PDF",
+        img: PDFImg,
+        link: "https://github.com/yuhsiang237/ReportPDF",
+        description:
+          `此為自行練習PDF產製專案。<br/>
+         因應當時銀行工作需產製大量的PDF報表`,
+        tag: ["C# .net core"],
       },
       
     ]);
