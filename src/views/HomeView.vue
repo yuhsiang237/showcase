@@ -149,7 +149,7 @@ export default {
       `你好，我是郁翔(YU HSIANG)<br/><br/>
       在過往工作中，發覺仍然喜歡做與圖像相關的工作。<br/>
       因此，職涯方向為前端軟體工程師。<br/>
-      並以能穩定開發、產出為主。<br/>
+      並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。<br/>
       <br/>
       <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
       `,
