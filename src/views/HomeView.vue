@@ -189,7 +189,13 @@ export default {
         subtitle: "ESUN BANK",
         img: EsunbankImg,
         link: "https://event.esunbank.com.tw/mkt/loan/DG/index.html",
-        description: `<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。使用Vue3，並參與該案元件、頁面前端開發。此外，因為此案而碰觸到Typescript開發。</p>
+        description: `<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。使用Vue3，並參與該案元件、頁面前端開發。
+        <br/><br/>
+- 前端:開發行員後台的貸款審核系統，申貸至核貸，處理頁面百頁以上，API串接百隻以上<br/>
+(技術:Vue3、Typescript、SCSS)<br/>
+- 後端:撰寫微服務API，並依照需求提供前端網站串接，並撰寫單元測試供QA驗測<br/>
+(技術:C#、.net core API、Docker、MSSQL、PostgreSQL)<br/>
+        </p>
           `,
         tag: ["Vue3", "CSS/SCSS", "HTML", "Typescript", "Javascript"],
       },
