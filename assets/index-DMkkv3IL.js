@@ -28,7 +28,7 @@
       並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。<br/>
       <br/>
       <a href="https://github.com/yuhsiang237"><i class="fa-brands fa-github"></i> Github: yuhsiang237</a>
-      `),s=Be({title:"",subtitle:"",img:"",link:"",description:""}),r={skills:["HTML","Vue3","Javscript ES6","JQuery","Bootstrap","CSS/SCSS/RWD","C# .net core API"],description:`<p>
+      `),s=Be({title:"",subtitle:"",img:"",link:"",description:""}),r={skills:["HTML","Vue3","Javscript ES6","JQuery","Bootstrap","CSS/SCSS/RWD","C# .net core API","SQL Server"],description:`<p>
       熟練使用Javascript與SCSS搭配Bootstrap開發，最近的工作使用框架為Vue3
       <br/>
       熟悉RWD切版、API異步呼叫處理(併發/同步)、RESTful API串接
