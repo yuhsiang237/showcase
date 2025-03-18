@@ -253,17 +253,24 @@ export default {
         subtitle: "FARM",
         img: PigFarm,
         link: "https://pigepm.moa.gov.tw/",
-        description:
-          `負責網站所有前端開發，以React Hook版本建構，含網站切版，使用人數註冊900+，牧場數1000+<br/>
-          <a href="https://pigepm.moa.gov.tw/files/%E4%BD%BF%E7%94%A8%E8%80%85%E6%89%8B%E5%86%8A-%E8%B1%AC%E5%A0%B4e%E6%8A%8A%E6%8A%93(2024).pdf">使用手冊 : 點我<a>`,
-        tag: ["HTML", "Javascript ES6","CSS", "Bootstrap","React", "React Hook"],
+        description: `負責網站所有前端開發，以React Hook版本建構，含網站切版，使用人數註冊900+，牧場數1000+<br/>
+          <a  target="_blank"  href="https://pigepm.moa.gov.tw/files/%E4%BD%BF%E7%94%A8%E8%80%85%E6%89%8B%E5%86%8A-%E8%B1%AC%E5%A0%B4e%E6%8A%8A%E6%8A%93(2024).pdf">使用手冊 : 點我<a>`,
+        tag: [
+          "HTML",
+          "Javascript ES6",
+          "CSS",
+          "Bootstrap",
+          "React",
+          "React Hook",
+        ],
       },
       {
         title: "Vue3常見操作整理",
         subtitle: "Vue3",
         img: Vue3Img,
         link: "https://yuhsiang237.github.io/vue-exercise/",
-        description: "此為Vue3中開發時常會使用到的語法糖紀錄",
+        description: `此為Vue3中開發時常會使用到的語法糖紀錄<br/>
+        <a target="_blank" href="https://github.com/yuhsiang237/vue-exercise">專案存庫:點我</a>`,
         tag: ["Vue3", "Javascript"],
       },
       {
