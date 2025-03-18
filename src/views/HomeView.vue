@@ -315,7 +315,7 @@ export default {
       {
         date: "2024",
         description: `<div class="mb-1"><b>一卡通票證股份有限公司 / 專案工程師</b></div>
-        負責底層交易系統開發，為「iPASS MONEY乘車碼」、「一卡通刷卡」的底層專案，為純SQL Server與Stored Procedure資料庫專案，工作一段時間後評估不大適合。與過往工作關聯性低，因偏向在程式端寫程式，而非在純資料庫上。`,
+        負責底層交易系統開發，為「iPASS MONEY乘車碼」、「一卡通刷卡」的底層專案，為純SQL Server與Stored Procedure資料庫專案，工作一段時間後評估不大適合，因職務內容偏向DBA，與過往工作關聯性低(過去偏向在程式端寫程式，而非在純資料庫上。)`,
       },
       {
         date: "2022-2024",
