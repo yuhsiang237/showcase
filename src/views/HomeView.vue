@@ -137,6 +137,7 @@ import ErpImg from "@/assets/image/workitem/erp.png";
 import Vue3Img from "@/assets/image/workitem/vue3.png";
 import ODImg from "@/assets/image/workitem/od.png";
 import PDFImg from "@/assets/image/workitem/pdf.png";
+import PigFarm from "@/assets/image/workitem/pigfarm.png";
 
 import DModal from "@/components/DModal.vue";
 
@@ -246,6 +247,16 @@ export default {
         description:
           "負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。",
         tag: ["HTML", "Javascript", "JQuery", "SCSS/CSS"],
+      },
+      {
+        title: "豬場e把抓",
+        subtitle: "FARM",
+        img: PigFarm,
+        link: "https://pigepm.moa.gov.tw/",
+        description:
+          `負責網站所有前端開發，以React Hook版本建構，含網站切版，使用人數註冊900+，牧場數1000+<br/>
+          <a href="https://pigepm.moa.gov.tw/files/%E4%BD%BF%E7%94%A8%E8%80%85%E6%89%8B%E5%86%8A-%E8%B1%AC%E5%A0%B4e%E6%8A%8A%E6%8A%93(2024).pdf">使用手冊 : 點我<a>`,
+        tag: ["HTML", "Javascript ES6","CSS", "Bootstrap","React", "React Hook"],
       },
       {
         title: "Vue3常見操作整理",
