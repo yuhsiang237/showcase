@@ -1,6 +1,5 @@
 <template>
-<div><img style="width:100%"
-:src="backgroundImage"/></div>
+  <div><img style="width: 100%" :src="backgroundImage" /></div>
 
   <RouterView />
   <GoTop />

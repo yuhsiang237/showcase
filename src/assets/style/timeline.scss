@@ -1,0 +1,56 @@
+.bsb-timeline-1 {
+  --bsb-tl-color: black;
+  --bsb-tl-circle-color: black;
+  --bsb-tl-circle-size: 13px;
+  --bsb-tl-circle-offset: 6.5px;
+
+  margin-top: 15px;
+}
+.bsb-timeline-1 .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline:after {
+  background-color: black;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin-left: -1px;
+  position: absolute;
+  top: 18px;
+  width: 2px;
+}
+.bsb-timeline-1 .timeline > .timeline-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline > .timeline-item:before {
+  background-color: var(--bsb-tl-circle-color);
+  border-radius: 50%;
+  content: "";
+  height: var(--bsb-tl-circle-size);
+  left: calc(var(--bsb-tl-circle-offset) * -1);
+  position: absolute;
+  top: 10px;
+  width: var(--bsb-tl-circle-size);
+  z-index: 1;
+}
+.bsb-timeline-1 .timeline > .timeline-item .timeline-body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline > .timeline-item .timeline-content {
+  padding: 0 0 2.5rem 2.5rem;
+}
+@media (min-width: 768px) {
+  .bsb-timeline-1 .timeline > .timeline-item .timeline-content {
+    padding-bottom: 3rem;
+  }
+}
+.bsb-timeline-1 .timeline > .timeline-item:last-child .timeline-content {
+  padding-bottom: 0;
+}

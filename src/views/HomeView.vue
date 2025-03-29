@@ -2,7 +2,7 @@
   <!-- 自我介紹 -->
   <div class="intro-area">
     <div class="logo">@Yuhsiang237</div>
-    <div class="container large">
+    <div class="container">
       <div class="row wow fadeInUp" data-wow-duration="2s">
         <div class="col-md-8 col-sm-12">
           <div class="title1 mb-3">自我介紹</div>
@@ -20,6 +20,48 @@
       </div>
     </div>
   </div>
+  <!-- 個人經歷 -->
+  <div class="work-exp-area">
+    <div class="container py-2 wow fadeIn" data-wow-duration="2s">
+      <div class="row">
+        <div class="col title1 mb-4">個人經歷</div>
+      </div>
+      <!-- Timeline 1 - Bootstrap Brain Component -->
+      <section class="bsb-timeline-1">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <ul class="timeline">
+                <li
+                  v-for="item in workExpData"
+                  :key="item"
+                  class="timeline-item"
+                >
+                  <div class="timeline-body">
+                    <div class="timeline-content">
+                      <div class="border-0">
+                        <div class="card-body p-0">
+                          <h5 class="card-subtitle mb-1">
+                            {{ item.jobtitle }} • {{ item.company }}
+                          </h5>
+                          <div class="mb-1 date">{{ item.date }}</div>
+                          <p
+                            v-html="item.description"
+                            class="card-text m-0"
+                          ></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- ./個人經歷 -->
   <!-- 技術 -->
   <div class="skill-area mb-3">
     <div class="container py-4 wow fadeIn" data-wow-duration="1s">
@@ -61,23 +103,6 @@
     </div>
   </div>
   <!-- ./作品-->
-  <!-- 個人經歷 -->
-  <div class="work-exp-area">
-    <div class="container py-4 wow fadeIn" data-wow-duration="2s">
-      <div class="row">
-        <div class="col title2 mb-3">個人經歷</div>
-      </div>
-      <div
-        class="row work-exp-card mb-2"
-        v-for="item in workExpData"
-        :key="item"
-      >
-        <div class="col-md-2 col-3 date">{{ item.date }}</div>
-        <div class="col description" v-html="item.description"></div>
-      </div>
-    </div>
-  </div>
-  <!-- ./個人經歷 -->
   <!-- footer -->
   <div class="footer-area">
     2025 copyright & designed by LAX&nbsp;
@@ -315,18 +340,24 @@ export default {
     const workExpData = ref([
       {
         date: "2024-2025",
-        description: `<div class="mb-1"><b>兼職 / 多方職涯嘗試</b></div>
+        jobtitle: "兼職",
+        company: "多方職涯嘗試",
+        description: `<div class="mb-1"></div>
         兼職了「連鎖日商壽司店-藏壽司」、「UBER EAT外送」，進行多方嘗試後，並梳理職涯方向。會做這個嘗試是因為過去只做過工程師，透過兼職了解除了工程師外的產業，並且在30歲前確定好職涯方向。<br/>
         `,
       },
       {
         date: "2024",
-        description: `<div class="mb-1"><b>一卡通票證股份有限公司 / 專案工程師</b></div>
+        jobtitle: "專案工程師",
+        company: "一卡通票證股份有限公司",
+        description: `
         負責底層交易系統開發，為「iPASS MONEY乘車碼」、「一卡通刷卡」的底層專案，為純SQL Server與Stored Procedure資料庫專案，工作一段時間後評估不大適合，因職務內容偏向DBA，與過往工作關聯性低(過去偏向在程式端寫程式，而非在純資料庫上。)`,
       },
       {
         date: "2022-2024",
-        description: `<div class="mb-1"><b>緯創軟體股份有限公司 / 軟體工程師(全端)</b></div>
+        jobtitle: "軟體工程師(全端)",
+        company: "緯創軟體股份有限公司",
+        description: `
         [銀行駐點開發]<br/>
 ◎玉山銀行：信用貸款整合系統<br/>
  - 前端:開發行員後台的貸款審核系統，申貸至核貸，處理頁面百頁以上，API串接百隻以上<br/>
@@ -345,13 +376,17 @@ export default {
       },
       {
         date: "2021",
-        description: `<div class="mb-1"><b>個人接案 / 軟體工程師</b></div>
+        jobtitle: "軟體工程師",
+        company: "個人接案",
+        description: `
         網站工程師、API撰寫。<br/>
         內容主要為Google Firebase與Google Flutter專案開發。<br/>`,
       },
       {
         date: "2018-2020",
-        description: `<div class="mb-1"><b>凌誠科技股份有限公司 / 前端網站工程師</b></div>
+        jobtitle: "前端網站工程師",
+        company: "凌誠科技股份有限公司",
+        description: `
         前端網站工程師，與設計師協作，含切版工作、設計討論、專案上線後與後端程式調整<br/>
         在任職期間參予了7份專案，主要為政府案，皆順利完成結案。<br/>
         團隊12人以上協作。<br/>

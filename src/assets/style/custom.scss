@@ -149,7 +149,6 @@ a {
 
 //===== Home =====
 .work-exp-area {
-  background-color: $second-color;
   min-height: 400px;
   letter-spacing: 0.08rem;
 
@@ -157,6 +156,7 @@ a {
     padding-bottom: 10px;
     .date {
       min-height: 80px;
+      color: #b0b4b4 !important;
     }
     .description {
       border-left: solid 1px;
