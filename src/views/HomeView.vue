@@ -366,7 +366,8 @@ export default {
 
 玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。<br/>
 
-連結：<a target="_blank" href="https://event.esunbank.com.tw/mkt/loan/DG/index.html">https://event.esunbank.com.tw/mkt/loan/DG/index.html</a><br/>
+連結：
+<a target="_blank" href="https://event.esunbank.com.tw/mkt/loan/DG/index.html">https://event.esunbank.com.tw/mkt/loan/DG/index.html</a><br/>
 <br/>
 <b>具體工作內容：</b><br/>
 <div style="margin-left:10px;margin-top:5px;">
