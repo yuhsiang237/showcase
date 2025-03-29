@@ -339,21 +339,6 @@ export default {
 
     const workExpData = ref([
       {
-        date: "2024-2025",
-        jobtitle: "兼職",
-        company: "多方職涯嘗試",
-        description: `<div class="mb-1"></div>
-        兼職了「連鎖日商壽司店-藏壽司」、「UBER EAT外送」，進行多方嘗試後，並梳理職涯方向。會做這個嘗試是因為過去只做過工程師，透過兼職了解除了工程師外的產業，並且在30歲前確定好職涯方向。<br/>
-        `,
-      },
-      {
-        date: "2024",
-        jobtitle: "專案工程師",
-        company: "一卡通票證股份有限公司",
-        description: `
-        負責底層交易系統開發，為「iPASS MONEY乘車碼」、「一卡通刷卡」的底層專案，為純SQL Server與Stored Procedure資料庫專案，工作一段時間後評估不大適合，因職務內容偏向DBA，與過往工作關聯性低(過去偏向在程式端寫程式，而非在純資料庫上。)`,
-      },
-      {
         date: "2022-2024",
         jobtitle: "軟體工程師(全端)",
         company: "緯創軟體股份有限公司",
