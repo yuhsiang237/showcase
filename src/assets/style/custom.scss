@@ -220,16 +220,18 @@ a {
     position: absolute;
     transform: rotate(90deg);
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1150px) {
+    .logo {
+      display: none;
+    }
+  }
+  @media (max-width: 860px) {
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 90px;
     margin-bottom: 90px;
     min-height: 0vh;
 
-    .logo {
-      display: none;
-    }
     img {
       margin-top: 20px;
       width: 100px;
