@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row wow fadeInUp" data-wow-duration="2s">
         <div class="col-md-8 col-sm-12">
-          <div class="title1 mb-3">自我介紹</div>
+          <div class="mb-3"><span class="overlay-title">自我介紹</span></div>
           <div
             data-wow-duration="10s"
             class="pr-3 medata wow animate__animated animate__fadeIn"
@@ -24,7 +24,7 @@
   <div class="work-exp-area">
     <div class="container py-2 wow fadeIn" data-wow-duration="2s">
       <div class="row">
-        <div class="col title1 mb-4">個人經歷</div>
+        <div class="col mb-4"><span class="overlay-title">個人經歷</span></div>
       </div>
       <!-- Timeline 1 - Bootstrap Brain Component -->
       <section class="bsb-timeline-1">
@@ -41,10 +41,13 @@
                     <div class="timeline-content">
                       <div class="border-0">
                         <div class="card-body p-0">
-                          <h5 class="card-subtitle mb-1">
-                            {{ item.jobtitle }} • {{ item.company }}
-                          </h5>
-                          <div class="mb-1 date">{{ item.date }}</div>
+                          <div class="work-exp-card-title mb-1">
+                            {{ item.jobtitle }} •
+                            <span>{{ item.company }}</span>
+                          </div>
+                          <div class="mb-1 work-exp-card-date">
+                            {{ item.date }}
+                          </div>
                           <p
                             v-html="item.description"
                             class="card-text m-0"
@@ -66,7 +69,7 @@
   <div class="skill-area mb-3">
     <div class="container py-4 wow fadeIn" data-wow-duration="1s">
       <div class="row">
-        <div class="title2 col mb-3">技術棧</div>
+        <div class="col mb-3"><span class="overlay-title">技術關聯</span></div>
       </div>
       <div class="row">
         <div class="col">
@@ -82,7 +85,9 @@
   <div class="work-item-area wow fadeIn" data-wow-duration="2s">
     <div class="container pt-3 pb-5">
       <div class="row">
-        <div class="col title2 text-center">作品一覽</div>
+        <div class="coltext-center">
+          <span class="overlay-title">作品一覽</span>
+        </div>
       </div>
       <div class="work-item-grid">
         <div
@@ -105,12 +110,9 @@
   <!-- ./作品-->
   <!-- footer -->
   <div class="footer-area">
-    2025 copyright & designed by LAX&nbsp;
-    <a
-      style="color: black; font-weight: bold; text-decoration: none"
-      href="https://github.com/yuhsiang237"
-      >@yuhsiang237</a
-    >&nbsp;
+    2025 copyright <span class="second-color">✦ </span>designed by
+    YU-HSIANG&nbsp;
+    <a href="https://github.com/yuhsiang237">@yuhsiang237</a>&nbsp;
   </div>
   <!-- ./footer -->
   <!-- 使用 DModal 元件 -->
@@ -211,17 +213,14 @@ export default {
         "JQuery",
         "Bootstrap",
         "CSS/SCSS/RWD",
-        "C# .net core API",
-        "SQL Server",
+        "API",
       ],
       description: `<p>
-      熟練使用Javascript與SCSS搭配Bootstrap開發，最近的工作使用框架為Vue3
-      <br/>
-      熟悉RWD切版、API異步呼叫處理(併發/同步)、RESTful API串接
-      <br/>
-      熟悉網站完整開發流程(敏捷開發)，開發至部署<br/>並曾參與開發大型專案、政府案、銀行應用網站開發<br/>
-      使用Git進行專案存庫代碼控管(Azure DevOps / Gitlab)<br/>
-      專案討論軟體(Teams)<br/>
+      ＋ 熟悉網站完整前後端開發流程 <br/>
+      ＋ API串接與非同步處理<br/>
+      ＋ RWD切版<br/>
+      ＋ 大型專案開發經驗(政府/銀行案)<br/>
+      ＋ 專案管控Git
       </p>`,
     };
     const workitemData = ref([
