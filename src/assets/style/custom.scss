@@ -168,7 +168,9 @@ a {
 .work-exp-area {
   min-height: 400px;
   letter-spacing: 0.08rem;
-
+  a {
+    text-decoration: underline;
+  }
   .work-exp-card-title {
     font-weight: bold;
     font-size: large;

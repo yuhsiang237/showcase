@@ -433,30 +433,33 @@ export default {
         company: "凌誠科技股份有限公司",
         description: `
        <b> 專案：</b><br/>
-
-1. 田邊好幫手 : 協助設計師切版，並在上線後維護專案，調整CSS與Javascript<br/>
+<ol>
+<li>
+田邊好幫手 : 協助設計師切版，並在上線後維護專案，調整CSS與Javascript<br/>
 
 連結：<a target="_blank" href="https://m.moa.gov.tw/">https://m.moa.gov.tw/</a><br/>
 
-2. 農產ERP : 負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。<br/>
+</li>
+<li>農產ERP : 負責該一頁式網站切版工作，並與設計師配合，協助將網站更貼合客戶需求。<br/>
 
 連結：<a target="_blank" href="https://www.linkjoin.com.tw/erp/">https://www.linkjoin.com.tw/erp/</a><br/>
-
-3. 農糧署追溯 : 農委會政府案，在團隊中負責幫設計師切版，並套用至MVC網站中，使用到了Javascript ES6 、SCSS，並在上線後維護。<br/>
+</li>
+<li>農糧署追溯 : 農委會政府案，在團隊中負責幫設計師切版，並套用至MVC網站中，使用到了Javascript ES6 、SCSS，並在上線後維護。<br/>
 
 連結：<a target="_blank" href="https://qrc.afa.gov.tw/">https://qrc.afa.gov.tw/</a><br/>
-
-4. 豬場e把抓 : 負責網站所有前端開發，以React Hook版本建構，含網站切版，使用人數註冊900+，牧場數1000+<br/>
+</li>
+<li>豬場e把抓 : 負責網站所有前端開發，以React Hook版本建構，含網站切版，使用人數註冊900+，牧場數1000+<br/>
 連結：<a target="_blank" href="https://pigepm.moa.gov.tw/">https://pigepm.moa.gov.tw/</a><br/>
-
-5. 天和水產 : 負責沿海養殖業水產養殖之管理，含箱網、漁獲量、進出貨、營收成本等。<br/>
-
-6. 農業易遊網 : 上線後協助調整內容<br/>
+</li>
+<li>天和水產 : 負責沿海養殖業水產養殖之管理，含箱網、漁獲量、進出貨、營收成本等。<br/>
+</li>
+<li>農業易遊網 : 上線後協助調整內容<br/>
 連結：<a target="_blank" href="https://ezgo.ardswc.gov.tw/zh-tw/">https://ezgo.ardswc.gov.tw/zh-tw/</a>
-<br/>
+<br/></li>
+<li>初級加工廠 : 參與設計與切版，負責原料加工，及產品產出之後續SOP E化<br/>
+<br/></li>
+</ol>
 
-7. 初級加工廠 : 參與設計與切版，負責原料加工，及產品產出之後續SOP E化<br/>
-<br/>
 <b>具體工作內容：</b><br/>
 <div style="margin-left:10px;margin-top:5px;">
 
