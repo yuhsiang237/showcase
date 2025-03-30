@@ -41,7 +41,7 @@
 
       
       
-      `),s=Ke({title:"",subtitle:"",img:"",link:"",description:""}),r={skills:["HTML","Vue3","Javscript ES6","JQuery","Bootstrap","CSS/SCSS/RWD","API"],description:`<p>
+      `),s=Ke({title:"",subtitle:"",img:"",link:"",description:""}),r={skills:["HTML","Vue3","Javscript ES6","JQuery","Bootstrap","CSS/SCSS/RWD","API","Adobe Photoshop/illustrator"],description:`<p>
       ＋ 熟悉網站完整前後端開發流程 <br/>
       ＋ API串接與非同步處理<br/>
       ＋ RWD切版<br/>
