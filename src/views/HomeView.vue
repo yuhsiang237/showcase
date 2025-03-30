@@ -165,6 +165,7 @@ import Vue3Img from "@/assets/image/workitem/vue3.png";
 import ODImg from "@/assets/image/workitem/od.png";
 import PDFImg from "@/assets/image/workitem/pdf.png";
 import PigFarm from "@/assets/image/workitem/pigfarm.png";
+import ResumeImg from "@/assets/image/workitem/resume.png";
 
 import DModal from "@/components/DModal.vue";
 
@@ -303,7 +304,7 @@ export default {
       {
         title: "Vue3個人履歷",
         subtitle: "Vue3",
-        img: Vue3Img,
+        img: ResumeImg,
         link: "https://github.com/yuhsiang237/showcase",
         description:
           "即本頁面之個人履歷。使用github存庫進行CI、gh-pages部署，該連結前往為專案儲存庫",
