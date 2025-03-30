@@ -153,7 +153,7 @@
 <script>
 import { ref } from "vue";
 import Demo from "@/assets/image/demo.png";
-import MeImg from "@/assets/image/me/me2.jpg";
+import MeImg from "@/assets/image/me/me2.png";
 import EsunbankImg from "@/assets/image/workitem/esunbank.png";
 import KgibankImg from "@/assets/image/workitem/kgibank.png";
 import MgovImg from "@/assets/image/workitem/mgov.png";
@@ -179,7 +179,7 @@ export default {
 你好，我是郁翔 (YU HSIANG) <br/>
 
 在過去參與的工作專案中，仍對做圖像工作感興趣。<br/>因此，將職涯方向定為前端工程師。 <br/>
-並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。 <br/>
+並以能穩定開發、產出為主，目前參與過專案皆於時程內完成。😉 <br/>
 <br/>
 對於新事物掌握速度快，對新出框架或衍伸服務，可以在2週內熟悉至可上手程度。(依過往工作經歷)<br/>
 
