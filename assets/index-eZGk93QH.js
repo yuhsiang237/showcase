@@ -62,7 +62,7 @@
 為保護帳號安全，密碼採用HASH與加鹽方式儲存。<br/>
 資料驗證欄位採用Fluent Validation及部分Model Validation。<br/>
 樣式支援RWD行動裝置瀏覽。<br/>`,tag:["JQuery","Javascript","C# .net core MVC","SQL Server","Entity Framework"]},{title:"PDF報表產製",subtitle:"PDF",img:eu,link:"https://github.com/yuhsiang237/ReportPDF",description:`此為自行練習PDF產製專案。<br/>
-         因應當時銀行工作需產製大量的PDF報表`,tag:["C# .net core"]}]);return{workExpData:Ke([{date:"2022-2024",jobtitle:"軟體工程師(全端)",company:"緯創軟體股份有限公司",description:`
+         因應當時銀行工作需產製大量的PDF報表`,tag:["C# .net core"]}]);return{workExpData:Ke([{date:"2022-2024",jobtitle:"軟體開發工程師(全端)",company:"緯創軟體股份有限公司",description:`
        <b>[銀行駐點開發]</b><br/>
 
 <b>◎玉山銀行：信用貸款整合系統</b><br/>
