@@ -337,7 +337,7 @@ export default {
     const workExpData = ref([
       {
         date: "2022-2024",
-        jobtitle: "軟體工程師(全端)",
+        jobtitle: "軟體開發工程師(全端)",
         company: "緯創軟體股份有限公司",
         description: `
        <b>[銀行駐點開發]</b><br/>
