@@ -215,6 +215,7 @@ export default {
         "Bootstrap",
         "CSS/SCSS/RWD",
         "API",
+        "Adobe Photoshop/illustrator"
       ],
       description: `<p>
       ＋ 熟悉網站完整前後端開發流程 <br/>
