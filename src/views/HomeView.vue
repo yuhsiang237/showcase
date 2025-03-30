@@ -108,13 +108,6 @@
     </div>
   </div>
   <!-- ./作品-->
-  <!-- footer -->
-  <div class="footer-area">
-    2025 copyright <span class="second-color">✦ </span>designed by
-    YU-HSIANG&nbsp;
-    <a href="https://github.com/yuhsiang237">@yuhsiang237</a>&nbsp;
-  </div>
-  <!-- ./footer -->
   <!-- 使用 DModal 元件 -->
   <WorkItemModal class="work-item-modal" @close="handleClose" ref="modal">
     <div class="container">
@@ -215,7 +208,7 @@ export default {
         "Bootstrap",
         "CSS/SCSS/RWD",
         "API",
-        "Adobe Photoshop/illustrator"
+        "Adobe Photoshop/illustrator",
       ],
       description: `<p>
       ＋ 熟悉網站完整前後端開發流程 <br/>
