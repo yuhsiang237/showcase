@@ -32,9 +32,9 @@ a {
   color: black;
 }
 .banner {
-  background-position: center; /* 背景图片居中 */
-  background-size: cover; /* 背景图片缩放以覆盖整个区域 */
-  background-repeat: no-repeat; /* 防止背景图片重复 */
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat; 
   max-height: 83vh;
   @media (max-width: 900px) {
     padding-left: 50px;
@@ -228,10 +228,6 @@ a {
       background-color: $third-color; /* 背景顏色變為黑色 */
     }
   }
-  @media (max-width: 900px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 }
 .intro-area {
   position: relative !important;
@@ -257,8 +253,10 @@ a {
     }
   }
   @media (max-width: 860px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    .content{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     margin-top: 90px;
     margin-bottom: 90px;
     min-height: 0vh;
