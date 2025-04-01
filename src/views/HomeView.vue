@@ -217,7 +217,7 @@ export default {
       ＋ API串接與非同步處理<br/>
       ＋ RWD切版<br/>
       ＋ 大型專案開發經驗(政府/銀行案)<br/>
-      ＋ 敏捷開發(專案Scrum+Sprint)<br/>
+      ＋ 敏捷開發(Scrum/Sprint)<br/>
       ＋ 專案管控Git
       </p>`,
     };
