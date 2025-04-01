@@ -46,6 +46,7 @@
       ＋ API串接與非同步處理<br/>
       ＋ RWD切版<br/>
       ＋ 大型專案開發經驗(政府/銀行案)<br/>
+      ＋ 敏捷開發(專案Scrum+Sprint)<br/>
       ＋ 專案管控Git
       </p>`},i=Ke([{title:"玉山銀行信貸",subtitle:"ESUN BANK",img:qa,link:"https://event.esunbank.com.tw/mkt/loan/DG/index.html",description:`<p>玉山銀行信用貸款行員後台開發，為該頁面申貸後行內審核流程應用。使用Vue3，並參與該案元件、頁面前端開發。
         <br/><br/>
