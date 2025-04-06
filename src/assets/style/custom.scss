@@ -4,10 +4,9 @@ $second-color: #e4443c;
 $third-color: #333333;
 
 /* break point */
-$screen-xs-max:768px;
-$screen-sm-max:992px;
-$screen-md-max:1200px;
-
+$screen-xs-max: 768px;
+$screen-sm-max: 992px;
+$screen-md-max: 1200px;
 
 * {
   font-size: 1rem;
@@ -39,10 +38,10 @@ a {
 }
 .banner {
   background-position: center;
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-repeat: no-repeat;
   max-height: 83vh;
-  @media (max-width:$screen-sm-max) {
+  @media (max-width: $screen-sm-max) {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -259,7 +258,7 @@ a {
     }
   }
   @media (max-width: $screen-xs-max) {
-    .content{
+    .content {
       padding-left: 30px;
       padding-right: 30px;
     }

@@ -6,7 +6,7 @@
       <div class="row wow fadeInUp" data-wow-duration="2s">
         <div class="col-md-8 col-sm-12">
           <div class="mb-3"><span class="overlay-title">自我介紹</span></div>
-         </div>
+        </div>
         <div class="col-md-8 col-sm-12 content">
           <div
             data-wow-duration="10s"
