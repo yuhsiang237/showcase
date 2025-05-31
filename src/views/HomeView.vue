@@ -110,6 +110,33 @@
     </div>
   </div>
   <!-- ./作品-->
+  <!-- 興趣學習 -->
+  <div class="work-item-area wow fadeIn" data-wow-duration="2s">
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        <div class="coltext-center">
+          <span class="overlay-title">興趣學習</span>
+        </div>
+      </div>
+      <div class="work-item-grid">
+        <div
+          v-for="item in interestItemData"
+          :key="item"
+          class="work-item-box"
+          @click="openModal(item)"
+        >
+          <figure>
+            <img :src="item.img" />
+          </figure>
+          <h3>
+            <span>{{ item.subtitle }}</span>
+            <div>{{ item.title }}</div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./興趣學習-->
   <!-- 使用 DModal 元件 -->
   <WorkItemModal class="work-item-modal" @close="handleClose" ref="modal">
     <div class="container">
@@ -161,6 +188,15 @@ import ODImg from "@/assets/image/workitem/od.png";
 import PDFImg from "@/assets/image/workitem/pdf.png";
 import PigFarm from "@/assets/image/workitem/pigfarm.png";
 import ResumeImg from "@/assets/image/workitem/resume.png";
+import Int1Img from "@/assets/image/interest/1.jpg";
+import Int2Img from "@/assets/image/interest/2.jpg";
+import Int3Img from "@/assets/image/interest/3.jpg";
+import Int4Img from "@/assets/image/interest/4.jpg";
+import Int5Img from "@/assets/image/interest/5.jpg";
+import Int6Img from "@/assets/image/interest/6.jpg";
+import Int7Img from "@/assets/image/interest/7.jpg";
+import Int8Img from "@/assets/image/interest/8.jpg";
+import Int9Img from "@/assets/image/interest/9.jpg";
 
 import DModal from "@/components/DModal.vue";
 
@@ -201,6 +237,69 @@ export default {
       link: "",
       description: "",
     });
+    const interestItemData = ref([
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int1Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int9Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int2Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int3Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int4Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int6Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "比對意識練習",
+        img: Int7Img,
+        description:
+          "8開	B4	38cmx26cm。<br/> 主要為對畫面臨摹的學習、形狀層級等。",
+      },
+      {
+        title: "✧",
+        subtitle: "透視練習",
+        img: Int5Img,
+        description: "8開	B4	38cmx26cm。<br/> 透視基礎學習",
+      },
+      {
+        title: "✧",
+        subtitle: "透視練習",
+        img: Int8Img,
+        description: "8開	B4	38cmx26cm。<br/> 透視基礎學習",
+      },
+    ]);
     const skillData = {
       skills: [
         "HTML",
@@ -515,6 +614,7 @@ export default {
       workitemData,
       meData,
       MeImg,
+      interestItemData,
     };
   },
 };
