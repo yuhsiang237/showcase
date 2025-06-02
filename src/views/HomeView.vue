@@ -99,7 +99,7 @@
           @click="openModal(item)"
         >
           <figure>
-            <img :src="item.img" />
+            <LazyImg :src="item.img" />
           </figure>
           <h3>
             <span>{{ item.subtitle }}</span>
@@ -126,7 +126,7 @@
           @click="openModal(item)"
         >
           <figure>
-            <img :src="item.img" />
+            <LazyImg :src="item.img" />
           </figure>
           <h3>
             <span>{{ item.subtitle }}</span>
@@ -199,11 +199,13 @@ import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
 
 import DModal from "@/components/DModal.vue";
+import LazyImg from "@/components/LazyImg.vue";
 
 export default {
   name: "show-case-view",
   components: {
     WorkItemModal: DModal,
+    LazyImg: LazyImg,
   },
   setup() {
     const demo = ref(Demo);
