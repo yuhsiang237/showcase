@@ -158,7 +158,7 @@
               v-html="workItemModalData.description"
             ></div>
           </div>
-          <button class="mb-3">
+          <button v-if="workItemModalData.link" class="mb-3">
             <a :href="workItemModalData.link" target="_blank"
               >前往查看 <i class="fa-sm fas fa-angle-right"></i
             ></a>
