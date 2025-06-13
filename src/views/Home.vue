@@ -199,8 +199,8 @@ import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
 import Intm1Img from "@/assets/image/interest/m1.png";
 
-import DModal from "@/components/DModal.vue";
-import LazyImg from "@/components/LazyImg.vue";
+import DModal from "@/components/common/DModal.vue";
+import LazyImg from "@/components/common/LazyImg.vue";
 
 export default {
   name: "show-case-view",

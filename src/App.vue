@@ -6,9 +6,9 @@
 </template>
 <script>
 import { RouterView } from "vue-router";
-import GoTop from "./components/GoTop.vue";
-import Banner from "./components/Banner.vue";
-import AppFooter from "./components/Footer.vue";
+import GoTop from "./components/common/GoTop.vue";
+import Banner from "./components/common/Banner.vue";
+import AppFooter from "./components/common/Footer.vue";
 
 export default {
   name: "app",
