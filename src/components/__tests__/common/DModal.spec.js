@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import DModal from "@/components/DModal.vue";
+import DModal from "@/components/common/DModal.vue";
 
 describe("DModal", () => {
   it("should show modal when openModal is called", async () => {
