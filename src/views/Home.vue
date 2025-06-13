@@ -1,177 +1,18 @@
 <template>
   <!-- 自我介紹 -->
-  <div class="intro-area">
-    <div class="logo">@Yuhsiang237</div>
-    <div class="container">
-      <div class="row wow fadeInUp" data-wow-duration="2s">
-        <div class="col-md-8 col-sm-12">
-          <div class="mb-3"><span class="overlay-title">自我介紹</span></div>
-        </div>
-        <div class="col-md-8 col-sm-12 content">
-          <div
-            data-wow-duration="10s"
-            class="pr-3 medata wow animate__animated animate__fadeIn"
-            v-html="meData"
-          ></div>
-        </div>
-        <div class="col-md-4 col-sm-12 content">
-          <div class="d-flex justify-content-end">
-            <img :src="MeImg" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Intro/>
+  <!-- ./自我介紹 -->
   <!-- 個人經歷 -->
-  <div class="work-exp-area">
-    <div class="container py-2 wow fadeIn" data-wow-duration="2s">
-      <div class="row">
-        <div class="col mb-4"><span class="overlay-title">個人經歷</span></div>
-      </div>
-      <!-- Timeline 1 - Bootstrap Brain Component -->
-      <section class="bsb-timeline-1">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <ul class="timeline">
-                <li
-                  v-for="item in workExpData"
-                  :key="item"
-                  class="timeline-item"
-                >
-                  <div class="timeline-body">
-                    <div class="timeline-content">
-                      <div class="border-0">
-                        <div class="card-body p-0">
-                          <div class="work-exp-card-title mb-1">
-                            {{ item.jobtitle }} •
-                            <span>{{ item.company }}</span>
-                          </div>
-                          <div class="mb-1 work-exp-card-date">
-                            {{ item.date }}
-                          </div>
-                          <p
-                            v-html="item.description"
-                            class="card-text m-0"
-                          ></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
+  <WorkExp/>
   <!-- ./個人經歷 -->
   <!-- 技術 -->
-  <div class="skill-area mb-3">
-    <div class="container py-4 wow fadeIn" data-wow-duration="1s">
-      <div class="row">
-        <div class="col mb-3"><span class="overlay-title">技術關聯</span></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <span class="skill-enum mb-2">
-            <div v-for="item in skillData.skills" :key="item">{{ item }}</div>
-          </span>
-          <div class="description" v-html="skillData.description"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Skill />
+  <!-- ./技術 -->
   <!-- 作品 -->
-  <div class="work-item-area wow fadeIn" data-wow-duration="2s">
-    <div class="container pt-3 pb-5">
-      <div class="row">
-        <div class="coltext-center">
-          <span class="overlay-title">作品一覽</span>
-        </div>
-      </div>
-      <div class="work-item-grid">
-        <div
-          v-for="item in workitemData"
-          :key="item"
-          class="work-item-box"
-          @click="openModal(item)"
-        >
-          <figure>
-            <LazyImg :src="item.img" />
-          </figure>
-          <h3>
-            <span>{{ item.subtitle }}</span>
-            <div>{{ item.title }}</div>
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
+  <WorkItem />
   <!-- ./作品-->
   <!-- 興趣學習 -->
-  <div class="work-item-area wow fadeIn" data-wow-duration="2s">
-    <div class="container pt-3 pb-5">
-      <div class="row">
-        <div class="coltext-center">
-          <span class="overlay-title">興趣學習</span>
-        </div>
-      </div>
-      <div class="work-item-grid">
-        <div
-          v-for="item in interestItemData"
-          :key="item"
-          class="work-item-box"
-          @click="openModal(item)"
-        >
-          <figure>
-            <LazyImg :src="item.img" />
-          </figure>
-          <h3>
-            <span>{{ item.subtitle }}</span>
-            <div>{{ item.title }}</div>
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./興趣學習-->
-  <!-- 使用 DModal 元件 -->
-  <WorkItemModal class="work-item-modal" @close="handleClose" ref="modal">
-    <div class="container">
-      <div class="row">
-        <div class="img col-md-6 col-sm-12">
-          <img :src="workItemModalData.img" />
-        </div>
-        <div class="content col-md-6 col-sm-12">
-          <div class="mb-3">
-            <div class="subtitle">
-              {{ workItemModalData.subtitle }}
-            </div>
-            <div class="title mb-3">
-              {{ workItemModalData.title }}
-            </div>
-
-            <div
-              class="description mb-2"
-              v-html="workItemModalData.description"
-            ></div>
-          </div>
-          <button v-if="workItemModalData.link" class="mb-3">
-            <a :href="workItemModalData.link" target="_blank"
-              >前往查看 <i class="fa-sm fas fa-angle-right"></i
-            ></a>
-          </button>
-          <div class="tag mb-3">
-            <span v-for="item in workItemModalData.tag" :key="item">
-              #{{ item }}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </WorkItemModal>
+  <InterestItem/>
 </template>
 
 <script>
@@ -199,14 +40,20 @@ import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
 import Intm1Img from "@/assets/image/interest/m1.png";
 
-import DModal from "@/components/common/DModal.vue";
-import LazyImg from "@/components/common/LazyImg.vue";
+import Intro from "@/components/Home/Intro.vue";
+import WorkExp from "@/components/Home/WorkExp.vue";
+import Skill from "@/components/Home/Skill.vue";
+import WorkItem from "@/components/Home/WorkItem.vue";
+import InterestItem from "@/components/Home/InterestItem.vue";
 
 export default {
-  name: "show-case-view",
+  name: "home-view",
   components: {
-    WorkItemModal: DModal,
-    LazyImg: LazyImg,
+    Intro:Intro,
+    WorkExp:WorkExp,
+    Skill:Skill,
+    WorkItem:WorkItem,
+    InterestItem:InterestItem,
   },
   setup() {
     const demo = ref(Demo);
