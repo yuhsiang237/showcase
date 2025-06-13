@@ -197,6 +197,7 @@ import Int6Img from "@/assets/image/interest/6.jpg";
 import Int7Img from "@/assets/image/interest/7.jpg";
 import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
+import Intm1Img from "@/assets/image/interest/m1.png";
 
 import DModal from "@/components/DModal.vue";
 import LazyImg from "@/components/LazyImg.vue";
@@ -240,6 +241,13 @@ export default {
       description: "",
     });
     const interestItemData = ref([
+      {
+        title: "✧",
+        subtitle: "打光練習",
+        img: Intm1Img,
+        description:
+          "透過光影來區分景別，構成畫面練習",
+      },
       {
         title: "✧",
         subtitle: "比對意識練習",
