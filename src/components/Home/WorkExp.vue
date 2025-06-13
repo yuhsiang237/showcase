@@ -1,5 +1,4 @@
 <template>
- 
   <!-- 個人經歷 -->
   <div class="work-exp-area">
     <div class="container py-2 wow fadeIn" data-wow-duration="2s">
@@ -52,10 +51,8 @@ import { ref } from "vue";
 
 export default {
   name: "home-work-exp",
-  components: {
-  },
+  components: {},
   setup() {
-    
     const workExpData = ref([
       {
         date: "2022-2024",

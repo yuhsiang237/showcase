@@ -30,9 +30,7 @@ import MeImg from "@/assets/image/me/me2.png";
 
 export default {
   name: "home-intro",
-  components: {
-
-  },
+  components: {},
   setup() {
     const modal = ref(null);
     const meData = ref(
@@ -57,11 +55,10 @@ export default {
       
       `,
     );
-    
+
     return {
-     
       modal,
-      
+
       meData,
       MeImg,
     };

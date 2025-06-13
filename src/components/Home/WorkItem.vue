@@ -1,5 +1,4 @@
 <template>
-  
   <!-- 作品 -->
   <div class="work-item-area wow fadeIn" data-wow-duration="2s">
     <div class="container pt-3 pb-5">
@@ -120,7 +119,7 @@ export default {
       link: "",
       description: "",
     });
-   
+
     const workitemData = ref([
       {
         title: "玉山銀行信貸",
@@ -237,7 +236,7 @@ export default {
       },
     ]);
 
-   const openModal = (workItem) => {
+    const openModal = (workItem) => {
       if (modal.value) {
         modal.value.openModal();
         workItemModalData.value = workItem;

@@ -90,7 +90,7 @@ export default {
   setup() {
     const demo = ref(Demo);
     const modal = ref(null);
-      const workItemModalData = ref({
+    const workItemModalData = ref({
       title: "",
       subtitle: "",
       img: "",
@@ -102,8 +102,7 @@ export default {
         title: "✧",
         subtitle: "打光練習",
         img: Intm1Img,
-        description:
-          "透過光影來區分景別，構成畫面練習",
+        description: "透過光影來區分景別，構成畫面練習",
       },
       {
         title: "✧",
@@ -167,9 +166,8 @@ export default {
         description: "8開	B4	38cmx26cm。<br/> 透視基礎學習",
       },
     ]);
-  
-  
-     const openModal = (workItem) => {
+
+    const openModal = (workItem) => {
       if (modal.value) {
         modal.value.openModal();
         workItemModalData.value = workItem;

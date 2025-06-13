@@ -1,5 +1,5 @@
 <template>
-   <div class="skill-area mb-3">
+  <div class="skill-area mb-3">
     <div class="container py-4 wow fadeIn" data-wow-duration="1s">
       <div class="row">
         <div class="col mb-3"><span class="overlay-title">技術關聯</span></div>
@@ -19,10 +19,8 @@
 <script>
 export default {
   name: "home-skill",
-  components: {
-  },
+  components: {},
   setup() {
- 
     const skillData = {
       skills: [
         "HTML",
