@@ -27,10 +27,12 @@
                           <div class="mb-1 work-exp-card-date">
                             {{ item.date }}
                           </div>
-                          <p
-                            v-html="item.description"
-                            class="card-text m-0"
-                          ></p>
+                          <CollapseText :collapsed-height="400">
+                            <p
+                              v-html="item.description"
+                              class="card-text m-0"
+                            ></p>
+                          </CollapseText>
                         </div>
                       </div>
                     </div>
@@ -48,10 +50,13 @@
 
 <script>
 import { ref } from "vue";
+import CollapseText from "@/components/common/CollapseText.vue";
 
 export default {
   name: "home-work-exp",
-  components: {},
+  components: {
+    CollapseText: CollapseText,
+  },
   setup() {
     const workExpData = ref([
       {
