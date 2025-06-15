@@ -202,8 +202,13 @@ export default {
         subtitle: "Vue3",
         img: ResumeImg,
         link: "https://github.com/yuhsiang237/showcase",
-        description:
-          "即本頁面之個人履歷。使用github存庫進行CI、gh-pages部署，該連結前往為專案儲存庫",
+        description: `即本頁面之個人履歷。使用github存庫進行CI、gh-pages部署，該連結前往為專案儲存庫。
+          
+          <br><br>內含:<ul>
+          <li>路由配置</li>
+          <li>存庫測試CI</li>
+          <li>Component元件設計</li>
+          </ul>`,
         tag: ["Vue3", "Javascript"],
       },
       {
