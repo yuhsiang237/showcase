@@ -74,7 +74,7 @@ import AfaImg from "@/assets/image/workitem/afa.png";
 import ErpImg from "@/assets/image/workitem/erp.png";
 import Vue3Img from "@/assets/image/workitem/vue3.png";
 import ODImg from "@/assets/image/workitem/od.png";
-import PDFImg from "@/assets/image/workitem/pdf.png";
+import CampDayImg from "@/assets/image/workitem/campday.png";
 import PigFarm from "@/assets/image/workitem/pigfarm.png";
 import ResumeImg from "@/assets/image/workitem/resume.png";
 
@@ -231,13 +231,13 @@ export default {
         ],
       },
       {
-        title: "PDF報表產製",
-        subtitle: "PDF",
-        img: PDFImg,
-        link: "https://github.com/yuhsiang237/ReportPDF",
-        description: `此為自行練習PDF產製專案。<br/>
-         因應當時銀行工作需產製大量的PDF報表`,
-        tag: ["C# .net core"],
+        title: "露營日",
+        subtitle: "CAMP DAY",
+        img: CampDayImg,
+        link: "https://yuhsiang237.github.io/CampDay/",
+        description: `使用Angular結合氣象局API、露營OPEN DATA的查詢網站。<br/>
+         可以快速查詢該縣市的露營地點，同時給予7天的氣候資訊<br/>`,
+        tag: ["Angular", "Typescript", "HTML", "SCSS"],
       },
     ]);
 
