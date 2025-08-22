@@ -38,6 +38,7 @@
     "sass": "^1.83.4",
     "start-server-and-test": "^2.0.9",
     "vite": "^6.0.5",
+    "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-vue-devtools": "^7.6.8",
     "vitest": "^2.1.8"
   }
