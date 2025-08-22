@@ -24,7 +24,7 @@ setup() {
     let lenis;
     onMounted(() => {
   lenis = new Lenis({
-    duration: 1,         // 建議 0.4 ~ 0.8 之間
+    duration: 0.8,         // 建議 0.4 ~ 0.8 之間
     smoothWheel: true,     // ✅ 讓滾輪生效
     smoothTouch: false,    // 手機觸控可以關掉
     wheelMultiplier: 1.2,  // 加快一點速度

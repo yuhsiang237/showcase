@@ -1,7 +1,7 @@
 <template>
   <!-- 興趣學習 -->
-  <div class="work-item-area wow fadeIn" data-wow-duration="2s">
-    <div class="container pt-3 pb-5">
+  <div class="work-item-area"  ref="workRef">
+    <div class="container pt-3 pb-5" ref="containerRef">
       <div class="row">
         <div class="coltext-center">
           <span class="overlay-title">興趣學習</span>
@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref,onMounted, onBeforeUnmount,nextTick  } from "vue";
 import Demo from "@/assets/image/demo.png";
 
 import Int1Img from "@/assets/image/interest/1.jpg";
@@ -81,6 +81,9 @@ import Intm1Img from "@/assets/image/interest/m1.png";
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   name: "interestitem-view",
   components: {
@@ -88,6 +91,7 @@ export default {
     LazyImg: LazyImg,
   },
   setup() {
+    
     const demo = ref(Demo);
     const modal = ref(null);
     const workItemModalData = ref({
@@ -185,6 +189,35 @@ export default {
       };
     };
 
+ const containerRef = ref(null);
+    const workRef = ref(null);
+    let anim;
+onMounted(() => {
+      nextTick(() => {
+        // 初始透明度
+        containerRef.value.style.opacity = 0;
+
+        anim = gsap.fromTo(
+          containerRef.value,
+          { opacity: 0,}, 
+          {
+            opacity: 1,
+            duration: 1.5,
+            scrollTrigger: {
+              trigger: workRef.value,
+              start: "top 80%",
+              end: "bottom top",
+              toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
+            },
+          }
+        );
+      });
+    });
+
+    onBeforeUnmount(() => {
+      anim?.scrollTrigger?.kill();
+    });
+
     return {
       demo,
       openModal,
@@ -192,6 +225,8 @@ export default {
       modal,
       workItemModalData,
       interestItemData,
+      workRef,
+      containerRef,
     };
   },
 };

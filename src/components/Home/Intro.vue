@@ -1,22 +1,22 @@
 <template>
   <!-- 自我介紹 -->
-  <div class="intro-area">
+  <div class="intro-area" ref="introRef">
     <div class="logo">@Yuhsiang237</div>
     <div class="container">
-      <div class="row wow fadeInUp" data-wow-duration="2s">
+      <div class="row" >
         <div class="col-md-8 col-sm-12">
           <div class="mb-3"><span class="overlay-title">自我介紹</span></div>
         </div>
         <div class="col-md-8 col-sm-12 content">
           <div
-            data-wow-duration="10s"
-            class="pr-3 medata wow animate__animated animate__fadeIn"
+               ref="medataRef"
+            class="pr-3 medata "
             v-html="meData"
           ></div>
         </div>
         <div class="col-md-4 col-sm-12 content">
           <div class="d-flex justify-content-end">
-            <img :src="MeImg" />
+            <img ref="meimgRef" :src="MeImg" />
           </div>
         </div>
       </div>
@@ -25,13 +25,21 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref ,onBeforeUnmount,onMounted } from "vue";
 import MeImg from "@/assets/image/me/me2.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: "home-intro",
   components: {},
-  setup() {
+  setup() {  
+      const introRef = ref(null);
+
+       const medataRef = ref(null);
+    const meimgRef = ref(null);
     const modal = ref(null);
     const meData = ref(
       `
@@ -51,17 +59,56 @@ export default {
       <a target="_blank" href="https://yuhsiang237.github.io/"><i class="fa-solid fa-earth-americas"></i> 程式筆記網站</a>
       <br/>
       <a target="_blank" href="https://leetcode.com/u/yuhsiang237/"><i class="fa-solid fa-code"></i> Leetcode</a>
-
-      
-      
       `,
     );
+let medataAnim, meimgAnim;
+onMounted(() => {
+      // 文字淡入
+      medataAnim = gsap.fromTo(
+  medataRef.value,
+  { opacity: 0, y: 150 },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: introRef.value,
+      start: "top 150%",   // 區塊 top 到 viewport 80% 觸發
+      end: "bottom top",  // 區塊 bottom 到 viewport top 時結束動畫
+      scrub: true,        // 滾動進度控制動畫
+    },
+  }
+);
 
+      // 圖片淡入
+      meimgAnim =gsap.fromTo(
+  meimgRef.value,
+  { opacity: 0, x: 150 },
+  {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: introRef.value,
+      start: "top 150%",
+      end: "bottom top",
+      scrub: true,
+    },
+  }
+);
+    });
+
+    onBeforeUnmount(() => {
+      medataAnim?.scrollTrigger?.kill();
+      meimgAnim?.scrollTrigger?.kill();
+    });
     return {
       modal,
-
       meData,
       MeImg,
+introRef ,
+ medataRef, 
+meimgRef
     };
   },
 };

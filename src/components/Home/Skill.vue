@@ -1,6 +1,6 @@
 <template>
-  <div class="skill-area mb-3">
-    <div class="container py-4 wow fadeIn" data-wow-duration="1s">
+  <div class="skill-area mb-3" ref="skillRef">
+    <div class="container py-4" ref="containerRef">
       <div class="row">
         <div class="col mb-3"><span class="overlay-title">技術關聯</span></div>
       </div>
@@ -17,10 +17,42 @@
 </template>
 
 <script>
+import { ref, onMounted, onBeforeUnmount,nextTick } from "vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   name: "home-skill",
   components: {},
   setup() {
+    const containerRef = ref(null);
+    const skillRef = ref(null);
+    let anim;
+    onMounted(() => {
+      nextTick(() => {
+        // 初始透明度
+        containerRef.value.style.opacity = 0;
+
+        anim = gsap.fromTo(
+          containerRef.value,
+          { opacity: 0,  }, 
+          {
+            opacity: 1,
+            duration: 1.5,
+            scrollTrigger: {
+              trigger: skillRef.value,
+              start: "top 80%",
+              end: "bottom top",
+              toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
+            },
+          }
+        );
+      });
+    });
+
+    onBeforeUnmount(() => {
+      anim?.scrollTrigger?.kill();
+    });
     const skillData = {
       skills: [
         "HTML",
@@ -43,6 +75,8 @@ export default {
     };
     return {
       skillData,
+      skillRef,
+      containerRef
     };
   },
 };

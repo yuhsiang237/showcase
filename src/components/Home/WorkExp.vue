@@ -1,7 +1,7 @@
 <template>
   <!-- 個人經歷 -->
-  <div class="work-exp-area">
-    <div class="container py-2 wow fadeIn" data-wow-duration="2s">
+  <div class="work-exp-area"  ref="workRef">
+    <div class="container py-2" ref="containerRef">
       <div class="row">
         <div class="col mb-4"><span class="overlay-title">個人經歷</span></div>
       </div>
@@ -49,8 +49,11 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount,nextTick } from "vue";
 import CollapseText from "@/components/common/CollapseText.vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: "home-work-exp",
@@ -58,6 +61,36 @@ export default {
     CollapseText: CollapseText,
   },
   setup() {
+    const containerRef = ref(null);
+    const workRef = ref(null);
+    let anim;
+
+    onMounted(() => {
+      nextTick(() => {
+        // 初始透明度
+        containerRef.value.style.opacity = 0;
+
+        anim = gsap.fromTo(
+          containerRef.value,
+          { opacity: 0, y: 150 }, // 從下方50px開始
+          {
+            opacity: 1,
+            y: 0,                 // 移動到原本位置
+            duration: 1.2,
+            scrollTrigger: {
+              trigger: workRef.value,
+              start: "top 80%",
+              end: "bottom top",
+              toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
+            },
+          }
+        );
+      });
+    });
+
+    onBeforeUnmount(() => {
+      anim?.scrollTrigger?.kill();
+    });
     const workExpData = ref([
       {
         date: "2022-2024",
@@ -210,6 +243,8 @@ export default {
 
     return {
       workExpData,
+      containerRef,
+      workRef,
     };
   },
 };
