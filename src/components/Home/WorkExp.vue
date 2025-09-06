@@ -1,6 +1,6 @@
 <template>
   <!-- 個人經歷 -->
-  <div class="work-exp-area"  ref="workRef">
+  <div class="work-exp-area" ref="workRef">
     <div class="container py-2" ref="containerRef">
       <div class="row">
         <div class="col mb-4"><span class="overlay-title">個人經歷</span></div>
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount,nextTick } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import CollapseText from "@/components/common/CollapseText.vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -75,7 +75,7 @@ export default {
           { opacity: 0, y: 150 }, // 從下方50px開始
           {
             opacity: 1,
-            y: 0,                 // 移動到原本位置
+            y: 0, // 移動到原本位置
             duration: 1.2,
             scrollTrigger: {
               trigger: workRef.value,
@@ -83,7 +83,7 @@ export default {
               end: "bottom top",
               toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
             },
-          }
+          },
         );
       });
     });
@@ -92,6 +92,19 @@ export default {
       anim?.scrollTrigger?.kill();
     });
     const workExpData = ref([
+      {
+        date: "2025",
+        jobtitle: "前端網站工程師",
+        company: "國泰人壽保險股份有限公司",
+        description: `目前在公司負責前端專案開發，參與功能設計與實作，確保專案高效交付。<br/>
+        並同時與AI協作，優化與重構，提升程式碼品質與維護、增加開發效率。<br/>`,
+      },
+      {
+        date: "2024",
+        jobtitle: "專案工程師",
+        company: "一卡通票證股份有限公司",
+        description: `工作內容主要為一卡通票證iPASS MONEY的程式維運。<br/>`,
+      },
       {
         date: "2022-2024",
         jobtitle: "軟體開發工程師(全端)",

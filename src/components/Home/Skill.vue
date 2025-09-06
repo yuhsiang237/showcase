@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount,nextTick } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +35,7 @@ export default {
 
         anim = gsap.fromTo(
           containerRef.value,
-          { opacity: 0,  }, 
+          { opacity: 0 },
           {
             opacity: 1,
             duration: 1.5,
@@ -45,7 +45,7 @@ export default {
               end: "bottom top",
               toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
             },
-          }
+          },
         );
       });
     });
@@ -76,7 +76,7 @@ export default {
     return {
       skillData,
       skillRef,
-      containerRef
+      containerRef,
     };
   },
 };

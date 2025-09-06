@@ -1,9 +1,9 @@
 <template>
   <!-- 興趣學習 -->
-  <div class="work-item-area"  ref="workRef">
+  <div class="work-item-area" ref="workRef">
     <div class="container pt-3 pb-5" ref="containerRef">
       <div class="row">
-        <div class="coltext-center">
+        <div class="coltext-center pl-3">
           <span class="overlay-title">興趣學習</span>
         </div>
       </div>
@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import { ref,onMounted, onBeforeUnmount,nextTick  } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import Demo from "@/assets/image/demo.png";
 
 import Int1Img from "@/assets/image/interest/1.jpg";
@@ -91,7 +91,6 @@ export default {
     LazyImg: LazyImg,
   },
   setup() {
-    
     const demo = ref(Demo);
     const modal = ref(null);
     const workItemModalData = ref({
@@ -189,17 +188,17 @@ export default {
       };
     };
 
- const containerRef = ref(null);
+    const containerRef = ref(null);
     const workRef = ref(null);
     let anim;
-onMounted(() => {
+    onMounted(() => {
       nextTick(() => {
         // 初始透明度
         containerRef.value.style.opacity = 0;
 
         anim = gsap.fromTo(
           containerRef.value,
-          { opacity: 0,}, 
+          { opacity: 0 },
           {
             opacity: 1,
             duration: 1.5,
@@ -209,7 +208,7 @@ onMounted(() => {
               end: "bottom top",
               toggleActions: "play none none none", // 滑入淡入向上，滑離淡出
             },
-          }
+          },
         );
       });
     });
