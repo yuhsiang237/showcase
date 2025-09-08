@@ -1,47 +1,75 @@
 <template>
-  <Banner />
-  <RouterView />
-  <GoTop />
-  <AppFooter />
+  <div class="page">
+    <div class="nav">
+      測試nav
+    </div>
+    <div class="alertbar">
+   測試alertbar
+    </div>
+    <div class="content">
+      <div>內容1</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容</div> <div>內容3</div>
+    </div>
+      <div class="footerbar">
+測試footerbar1<br/><br/>
+
+    </div>
+    <div class="footerbar">
+測試footerbar1 最底
+    </div>
+  </div>
 </template>
-<script>
-import { onMounted, onBeforeUnmount } from "vue";
-import { RouterView } from "vue-router";
-import GoTop from "./components/common/GoTop.vue";
-import Banner from "./components/common/Banner.vue";
-import AppFooter from "./components/common/Footer.vue";
-import Lenis from "@studio-freight/lenis";
 
-export default {
-  name: "app",
-  components: {
-    RouterView,
-    GoTop,
-    Banner,
-    AppFooter,
-  },
-  setup() {
-    let lenis;
-    onMounted(() => {
-      lenis = new Lenis({
-        duration: 0.8, // 建議 0.4 ~ 0.8 之間
-        smoothWheel: true, // ✅ 讓滾輪生效
-        smoothTouch: false, // 手機觸控可以關掉
-        wheelMultiplier: 1.2, // 加快一點速度
-        easing: (t) => 1 - Math.pow(1 - t, 3), // 比較自然的 easeOutCubic
-      });
+<style scoped>
+.page {
+   display: flex;
+  flex-direction: column;
+  background: red;
+  width: 100%;
+  height: 100dvh;
+}
+.nav {
+  background: lightblue;
+}
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
+.alertbar {
+  background: pink;
+}
 
-      requestAnimationFrame(raf);
-    });
+.content {
+  background: lightgreen;
+  flex: 1; /* 自動撐滿剩餘空間 */
+  overflow: auto; /* 內容多了可以滾動 */
+}
 
-    onBeforeUnmount(() => {
-      lenis?.destroy();
-    });
-  },
-};
+.footerbar {
+  background: orange;
+}
+:global(html, body) {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 禁止捲動條 */
+  overscroll-behavior: none; /* 防止 iOS 回彈 */
+}
+</style>
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const pageEl = ref(null)
+
+function fixHeight() {
+  if (pageEl.value) {
+    // Fallback：舊版 iOS 不支援 dvh，就用 JS 設定
+    pageEl.value.style.height = window.innerHeight + 'px'
+  }
+}
+
+onMounted(() => {
+  fixHeight()
+  window.addEventListener('resize', fixHeight)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', fixHeight)
+})
 </script>
