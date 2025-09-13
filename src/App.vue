@@ -1,4 +1,5 @@
 <template>
+  <Loader/>
   <Banner />
   <RouterView />
   <GoTop />
@@ -11,6 +12,7 @@ import GoTop from "./components/common/GoTop.vue";
 import Banner from "./components/common/Banner.vue";
 import AppFooter from "./components/common/Footer.vue";
 import Lenis from "@studio-freight/lenis";
+import Loader from './components/common/Loader.vue'
 
 export default {
   name: "app",
@@ -19,6 +21,7 @@ export default {
     GoTop,
     Banner,
     AppFooter,
+    Loader,
   },
   setup() {
     let lenis;
