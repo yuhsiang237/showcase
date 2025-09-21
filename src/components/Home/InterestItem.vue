@@ -76,6 +76,7 @@ import Int6Img from "@/assets/image/interest/6.jpg";
 import Int7Img from "@/assets/image/interest/7.jpg";
 import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
+import Int10Img from "@/assets/image/interest/10.png";
 import Intm1Img from "@/assets/image/interest/m1.png";
 
 import DModal from "@/components/common/DModal.vue";
@@ -101,6 +102,12 @@ export default {
       description: "",
     });
     const interestItemData = ref([
+      {
+        title: "✧",
+        subtitle: "新宿街頭素寫",
+        img: Int10Img,
+        description: "用CSP畫了大概11小時O_O",
+      },
       {
         title: "✧",
         subtitle: "打光練習",
