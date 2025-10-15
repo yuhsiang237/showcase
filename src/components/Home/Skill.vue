@@ -57,11 +57,11 @@ export default {
       skills: [
         "HTML",
         "Vue3",
+        "Typescript",
         "Javscript ES6",
         "JQuery",
         "Bootstrap",
         "CSS/SCSS/RWD",
-        "API",
         "Adobe Photoshop/illustrator",
       ],
       description: `<p>
