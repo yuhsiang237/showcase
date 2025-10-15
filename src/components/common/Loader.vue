@@ -10,52 +10,52 @@
   </transition>
 </template>
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, watch } from "vue";
 import v3smallloading from "../../assets/image/v3smallloading.png";
 
-const show = ref(true)
-const progress = ref(0)
-let scrollTop = 0
+const show = ref(true);
+const progress = ref(0);
+let scrollTop = 0;
 
 onMounted(() => {
   // 1. 記錄當前 scroll 位置
-  scrollTop = window.scrollY || document.documentElement.scrollTop
+  scrollTop = window.scrollY || document.documentElement.scrollTop;
 
   // 2. 設定 body 固定
-  document.body.style.position = 'fixed'
-  document.body.style.top = `-${scrollTop}px`
-  document.body.style.left = '0'
-  document.body.style.right = '0'
-  document.body.style.overflow = 'hidden'
-  document.body.style.width = '100%'
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollTop}px`;
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.overflow = "hidden";
+  document.body.style.width = "100%";
 
   const interval = setInterval(() => {
     if (progress.value < 100) {
-      const base = 1
-      const factor = progress.value / 20
-      const delta = base + factor + Math.random() * 2
-      progress.value = Math.min(progress.value + delta, 100)
+      const base = 1;
+      const factor = progress.value / 20;
+      const delta = base + factor + Math.random() * 2;
+      progress.value = Math.min(progress.value + delta, 100);
     } else {
-      clearInterval(interval)
+      clearInterval(interval);
       setTimeout(() => {
-        show.value = false
-      }, 300)
+        show.value = false;
+      }, 300);
     }
-  }, 100)
-})
+  }, 100);
+});
 
 watch(show, (val) => {
   if (!val) {
     // 解除固定，回到原 scroll 位置
-    document.body.style.position = ''
-    document.body.style.top = ''
-    document.body.style.left = ''
-    document.body.style.right = ''
-    document.body.style.overflow = ''
-    document.body.style.width = ''
-    window.scrollTo(0, scrollTop)
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.overflow = "";
+    document.body.style.width = "";
+    window.scrollTo(0, scrollTop);
   }
-})
+});
 </script>
 
 <style scoped>
@@ -78,7 +78,8 @@ watch(show, (val) => {
 }
 
 @keyframes logo-fade {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.7;
   }
   50% {
@@ -98,7 +99,7 @@ watch(show, (val) => {
 
 .progress {
   height: 100%;
-  background: linear-gradient(90deg, #E4443C, #E4443C);
+  background: linear-gradient(90deg, #e4443c, #e4443c);
   width: 0%;
   transition: width 0.1s ease-out;
 }

@@ -78,6 +78,7 @@ import Int8Img from "@/assets/image/interest/8.jpg";
 import Int9Img from "@/assets/image/interest/9.jpg";
 import Int10Img from "@/assets/image/interest/10.png";
 import Intm1Img from "@/assets/image/interest/m1.png";
+import Int11Img from "@/assets/image/interest/11.png";
 
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
@@ -102,6 +103,13 @@ export default {
       description: "",
     });
     const interestItemData = ref([
+      {
+        title: "✧",
+        subtitle: "孤獨搖滾-虹夏",
+        img: Int11Img,
+        description:
+          "花了點時間用CSP畫了這張圖，背景以STARRY表演台，為虹夏與樂團練團後留下的思考片段。",
+      },
       {
         title: "✧",
         subtitle: "新宿街頭素寫",
