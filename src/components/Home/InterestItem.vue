@@ -79,6 +79,7 @@ import Int9Img from "@/assets/image/interest/9.jpg";
 import Int10Img from "@/assets/image/interest/10.png";
 import Intm1Img from "@/assets/image/interest/m1.png";
 import Int11Img from "@/assets/image/interest/11.png";
+import Int12Img from "@/assets/image/interest/12.png";
 
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
@@ -103,6 +104,13 @@ export default {
       description: "",
     });
     const interestItemData = ref([
+      {
+        title: "✧",
+        subtitle: "3D變焦攝影",
+        img: Int12Img,
+        description:
+          "用Blender調整焦距，並建設一立方體、天空，模擬位於35層樓高攝影的情況。",
+      },
       {
         title: "✧",
         subtitle: "孤獨搖滾-虹夏",
