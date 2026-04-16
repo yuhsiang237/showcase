@@ -31,7 +31,20 @@
     <div class="container">
       <div class="row">
         <div class="img col-md-6 col-sm-12">
+          <template v-if="workItemModalData.video">
+          <video 
+            :src="workItemModalData.video" 
+            controls 
+            autoplay 
+            muted 
+            loop 
+            style="width: 100%; height: auto; display: block;">
+          </video>
+        </template>
+        
+        <template v-else>
           <img :src="workItemModalData.img" />
+        </template>
         </div>
         <div class="content col-md-6 col-sm-12">
           <div class="mb-3">
@@ -80,6 +93,8 @@ import Int10Img from "@/assets/image/interest/10.png";
 import Intm1Img from "@/assets/image/interest/m1.png";
 import Int11Img from "@/assets/image/interest/11.png";
 import Int12Img from "@/assets/image/interest/12.png";
+import soul from "@/assets/image/interest/soul.png";
+import soulVid from "@/assets/image/interest/soul.mp4";
 
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
@@ -104,6 +119,17 @@ export default {
       description: "",
     });
     const interestItemData = ref([
+      {
+        title: "Soul",
+        subtitle: "Motion Graphics",
+        img: soul,
+        video: soulVid, 
+        description:
+          `創作的靈魂究竟從哪裡來?所以我做了這張motion，記錄我的靈魂。<br/><br/>
+          The soul of creation—where does it really come from?
+So I made this motion piece to record my soul.
+          `,
+      },
       {
         title: "✧",
         subtitle: "3D變焦攝影",
@@ -205,6 +231,7 @@ export default {
       workItemModalData.value = {
         title: "",
         subtitle: "",
+        video: "", 
         img: "",
         link: "",
         description: "",
