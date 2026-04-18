@@ -128,7 +128,7 @@ export default {
         img: mindstate,
         video: mindstateVid, 
         description:
-          `在猶豫的門前等待的人，由三個心理狀態STAY、MOVE、WAIT。以此提醒時間會過去，要把握好選擇的當下，別再因過多的選擇，而阻礙了前進。
+          `在猶豫前等待的人，由三個心理狀態STAY、MOVE、WAIT。以此提醒時間會過去，要把握好選擇的當下，別再因過多的選擇，而阻礙了前進。
           <br/>*以Slot方式進行文字的替換，模擬猶豫時的狀態。<br/>
 <br/>
           People standing in front of the door of hesitation are shaped by three psychological states: STAY, MOVE, and WAIT. This serves as a reminder that time keeps passing, and we should seize the moment of choice. Do not let an excess of options hinder your progress.
