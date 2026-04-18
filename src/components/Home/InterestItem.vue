@@ -95,6 +95,8 @@ import Int11Img from "@/assets/image/interest/11.png";
 import Int12Img from "@/assets/image/interest/12.png";
 import soul from "@/assets/image/interest/soul.png";
 import soulVid from "@/assets/image/interest/soul.mp4";
+import mindstate from "@/assets/image/interest/MindState.png";
+import mindstateVid from "@/assets/image/interest/MindState.mp4";
 
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
@@ -118,7 +120,21 @@ export default {
       link: "",
       description: "",
     });
+
     const interestItemData = ref([
+       {
+        title: "Mind State",
+        subtitle: "Motion Graphics",
+        img: mindstate,
+        video: mindstateVid, 
+        description:
+          `在猶豫的門前等待的人，由三個心理狀態STAY、MOVE、WAIT。以此提醒時間會過去，要把握好選擇的當下，別再因過多的選擇，而阻礙了前進。
+          <br/>*以Slot方式進行文字的替換，模擬猶豫時的狀態。<br/>
+<br/>
+          People standing in front of the door of hesitation are shaped by three psychological states: STAY, MOVE, and WAIT. This serves as a reminder that time keeps passing, and we should seize the moment of choice. Do not let an excess of options hinder your progress.
+<br/>The text is replaced using a slot-based system to simulate the state of hesitation.<br/>
+          `,
+      },
       {
         title: "Soul",
         subtitle: "Motion Graphics",
