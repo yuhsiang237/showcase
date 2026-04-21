@@ -97,6 +97,8 @@ import soul from "@/assets/image/interest/soul.png";
 import soulVid from "@/assets/image/interest/soul.mp4";
 import mindstate from "@/assets/image/interest/MindState.png";
 import mindstateVid from "@/assets/image/interest/MindState.mp4";
+import became from "@/assets/image/interest/became/became_final.png";
+import becameVid from "@/assets/image/interest/became/became_final.mp4";
 
 import DModal from "@/components/common/DModal.vue";
 import LazyImg from "@/components/common/LazyImg.vue";
@@ -122,6 +124,18 @@ export default {
     });
 
     const interestItemData = ref([
+      {
+        title: "Became",
+        subtitle: "Motion Graphics",
+        img: became,
+        video: becameVid, 
+        description:
+          `想成為什麼?<br/>
+向前，隨著時間，接受到來的風險，並且面對，更靠近那想成為的 ＿。<br/><br/>
+What do you want to become?<br/>
+Move forward with time—accept the risks that come, face them, and get closer to the  ＿ you want to become.
+          `,
+      },
        {
         title: "Mind State",
         subtitle: "Motion Graphics",
